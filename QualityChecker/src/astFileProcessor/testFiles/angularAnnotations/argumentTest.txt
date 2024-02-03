@@ -1,0 +1,17 @@
+
+@Injectable({
+  providedIn: 'root'
+})
+@DecoratorTypesService.wholeBlockFile({})
+export class GameConfigurationService {
+
+  availableAlgorithms: AlgorithmMap[] = [];
+
+  constructor(
+    @DecoratorTypesService.skipLineParameter({"puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']"}, "[ARG=drawBordersService]")
+    private drawBordersService: DrawBordersService,
+    private shufflePuzzlesService: ShufflePuzzlesService
+    ) {
+    }
+ }
+ 

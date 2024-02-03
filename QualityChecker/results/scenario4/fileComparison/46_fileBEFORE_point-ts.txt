@@ -1,0 +1,10 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/models/point-ts
+import { DecoratorTypesService } from "../featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+var EXPRESSION_START65 = {};
+class DecoratorFileCopy {
+}
+var EXPRESSION_END65 = { "EXPRESSION_END": "---------------------------" };
+export interface Point {
+    x: number;
+    y: number;
+}

@@ -1,0 +1,10 @@
+import { TemplatePreviewComponent } from "../puzzle-builder/pages/template-preview/template-preview.component";
+// @ts-ignore
+@DecoratorTypesService.skipLineVariableDeclaration({"OR": { "zoomCoordinates": "true", "zoomValue": "true" }}, "[IMPORT=ZoomManagementComponent]") var newA;
+import { ZoomManagementComponent } from "../puzzle-builder/pages/zoom-management/zoom-management.component";
+
+let puzzleQuatro2 = "VERY DIFFERENT";
+
+@DecoratorTypesService.wholeBlockFile("THIS ONE")
+class Abcd {}
+

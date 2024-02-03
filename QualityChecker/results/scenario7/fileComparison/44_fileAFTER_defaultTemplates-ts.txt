@@ -1,0 +1,12 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/models/defaultTemplates-ts
+export interface TemplateCategory {
+    name: string;
+    images: TemplateImage[];
+}
+class DecoratorFileCopy {
+}
+export interface TemplateImage {
+    title: string;
+    quality: string;
+    src: string;
+}

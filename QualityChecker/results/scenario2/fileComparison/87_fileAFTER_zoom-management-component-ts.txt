@@ -1,0 +1,107 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/puzzle-builder/pages/zoom-management/zoom-management-component-ts
+import { AfterViewInit, Component, Inject } from "@angular/core";
+import { MatSlideToggleChange } from "@angular/material/slide-toggle";
+import { ZoomManagementInterface } from "src/app/models/zoomManagementInterface";
+import { ZoomManagerService } from "src/app/services/puzzleEvents/zoom-manager.service";
+import { PuzzleManagerService } from "src/app/services/puzzleGenerator/puzzle-manager.service";
+@Component({
+    selector: "app-zoom-management",
+    templateUrl: "./zoom-management.component.html",
+    styleUrls: ["./zoom-management.component.scss"]
+})
+export class ZoomManagementComponent implements ZoomManagementInterface, AfterViewInit {
+    centerX = 25;
+    centerY = 25;
+    zoomValue = 1;
+    zoomManagerService: ZoomManagerService;
+    constructor(puzzleManagerService: PuzzleManagerService, componentFactoryService: ComponentFactoryService) {
+        this.zoomManagerService = puzzleManagerService.getZoomManagerService();
+        this.zoomManagerService.initForComponent(this);
+    }
+    ngAfterViewInit(): void {
+        this.getComponentElement(this);
+    }
+    public getComponentElement(self: ZoomManagementComponent): Element | null | undefined {
+        const zoomHTML = document.getElementsByClassName("zoom-management-part")?.item(0);
+        this.addZoomCoordinates(zoomHTML);
+        this.addZoomValue(zoomHTML);
+        //  this.addZoomValue(zoomHTML);
+        return zoomHTML;
+    }
+    public addZoomValue(zoomHTML: Element | null): void {
+        if (zoomHTML !== null) {
+            const positionAfterHeading = function <T>(domLocation: HTMLElement, componentRef: ComponentRef<T>) {
+                domLocation.insertBefore(componentRef.location.nativeElement, domLocation.children.item(1));
+            };
+            this.instantiateZoomValueComponentAndEvents(zoomHTML, this, positionAfterHeading);
+        }
+        else {
+            console.log("Zoom coordinates instantiation failed. Zoom HTML is null.");
+        }
+    }
+    public instantiateZoomValueComponentAndEvents(zoomHTML: any, zoomManagementComp: ZoomManagementComponent, positionAfterHeading: Function): void {
+        const zoomValueRef = this.componentFactoryService.createComponent(SetZoomComponent, zoomHTML, undefined, positionAfterHeading);
+        zoomValueRef.instance.zoomEmitter.subscribe((result: number) => zoomManagementComp.setZoomValue(result));
+    }
+    public instantiateZoomCoordinatesComponentAndEvents(zoomHTML: any, zoomManagementComp: ZoomManagementComponent, positionAfterHeading: Function): void {
+        const zoomCoordinatesRef = this.componentFactoryService.createComponent(SetZoomPositionComponent, zoomHTML, undefined, positionAfterHeading);
+        zoomCoordinatesRef.instance.centerXEmitter.subscribe((result: number) => zoomManagementComp.setCenterX(result));
+        zoomCoordinatesRef.instance.centerYEmitter.subscribe((result: number) => zoomManagementComp.setCenterY(result));
+    }
+    public addZoomCoordinates(zoomHTML: Element | null): void {
+        if (zoomHTML !== null) {
+            const positionAfterHeading = function <T>(domLocation: HTMLElement, componentRef: ComponentRef<T>) {
+                domLocation.insertBefore(componentRef.location.nativeElement, domLocation.children.item(1));
+            };
+            this.instantiateZoomCoordinatesComponentAndEvents(zoomHTML, this, positionAfterHeading);
+        }
+        else {
+            console.log("Zoom coordinates instantiation failed. Zoom HTML is null.");
+        }
+    }
+    public setCenterXAndY(x: number, y: number): void {
+        this.centerX = x;
+        this.centerY = y;
+    }
+    public setCenterX(x: number): void {
+        this.centerX = x;
+    }
+    public setCenterY(y: number): void {
+        this.centerY = y;
+    }
+    public setZoomValue(zoomValue: number): void {
+        console.log(zoomValue);
+        this.zoomValue = zoomValue;
+    }
+    public setZoom(): void {
+        const puzzleBoard = this.puzzleManagerService.getPuzzleBoard();
+        this.zoomManagerService.zoomToPointWithZoom(this.centerX, this.centerY, puzzleBoard, this.zoomValue);
+    }
+    public setZoomFromDefaultToPoint(): void {
+        this.applyZoomReset();
+        const puzzleBoard = this.puzzleManagerService.getPuzzleBoard();
+        this.zoomManagerService.zoomToPointWithZoom(this.centerX, this.centerY, puzzleBoard, this.zoomValue);
+    }
+    public applyZoomIn(): void {
+        const puzzleBoard = this.puzzleManagerService.getPuzzleBoard();
+        this.zoomManagerService.zoomToPoint(this.centerX, this.centerY, puzzleBoard, -125);
+    }
+    public applyZoomOut(): void {
+        const puzzleBoard = this.puzzleManagerService.getPuzzleBoard();
+        this.zoomManagerService.zoomToPoint(this.centerX, this.centerY, puzzleBoard, +125);
+    }
+    public applyZoomReset(): void {
+        const puzzleBoard = this.puzzleManagerService.getPuzzleBoard();
+        this.zoomManagerService.resetZoom(puzzleBoard);
+    }
+    public toggleZoom($event: MatSlideToggleChange): void {
+        if ($event.checked) {
+            const zoomContents = document.getElementsByClassName("zoom-content");
+            Array.from(zoomContents).forEach(zoomContentDiv => zoomContentDiv.classList.add("hide-zoom-content"));
+        }
+        else {
+            const zoomContents = document.getElementsByClassName("zoom-content");
+            Array.from(zoomContents).forEach(zoomContentDiv => zoomContentDiv.classList.remove("hide-zoom-content"));
+        }
+    }
+}

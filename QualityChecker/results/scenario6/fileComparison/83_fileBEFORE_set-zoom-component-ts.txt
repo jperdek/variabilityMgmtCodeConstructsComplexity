@@ -1,0 +1,19 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/puzzle-builder/pages/zoom-management/set-zoom/set-zoom-component-ts
+import { Component, EventEmitter, Input, Output } from "@angular/core";
+import { DecoratorTypesService } from "src/app/featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+@Component({
+    selector: "app-set-zoom",
+    templateUrl: "./set-zoom.component.html",
+    styleUrls: ["./set-zoom.component.scss"]
+})
+@DecoratorTypesService.wholeBlockFile()
+export class SetZoomComponent {
+    @Output()
+    zoomEmitter: EventEmitter<number> = new EventEmitter();
+    zoomValue: number = 1;
+    constructor() {
+    }
+    setZoomFromDefaultToPoint(): void {
+        this.zoomEmitter.emit(this.zoomValue);
+    }
+}

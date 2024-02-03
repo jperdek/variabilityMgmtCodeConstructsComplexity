@@ -1,0 +1,12 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/services/puzzleControllers/puzzle-controller-interface-ts
+import { Injectable } from "@angular/core";
+import { ManageGraphicsService } from "../puzzleGenerator/manage-puzzle.service";
+import { DecoratorTypesService } from "src/app/featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+var EXPRESSION_START164 = {};
+@Injectable({
+    providedIn: "root"
+})
+export abstract class PuzzleController {
+    abstract registerControllers(ManageGraphicsService: ManageGraphicsService): void;
+}
+var EXPRESSION_END164 = { "EXPRESSION_END": "---------------------------" };

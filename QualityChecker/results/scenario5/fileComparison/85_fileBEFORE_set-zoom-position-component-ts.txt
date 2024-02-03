@@ -1,0 +1,28 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/puzzle-builder/pages/zoom-management/set-zoom-position/set-zoom-position-component-ts
+import { Component, EventEmitter, Output } from "@angular/core";
+import { DecoratorTypesService } from "src/app/featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+import { ZoomManagementInterface } from "src/app/models/zoomManagementInterface";
+import { PuzzleManagerService } from "src/app/services/puzzleGenerator/puzzle-manager.service";
+var EXPRESSION_START61 = { "zoomCoordinates": "true" };
+@Component({
+    selector: "app-set-zoom-position",
+    templateUrl: "./set-zoom-position.component.html",
+    styleUrls: ["./set-zoom-position.component.scss"]
+})
+export class SetZoomPositionComponent implements ZoomManagementInterface {
+    centerX = 25;
+    centerY = 25;
+    @Output()
+    centerXEmitter: EventEmitter<number> = new EventEmitter();
+    @Output()
+    centerYEmitter: EventEmitter<number> = new EventEmitter();
+    constructor(puzzleManagerService: PuzzleManagerService) {
+        const zoomManagerService = this.puzzleManagerService.getZoomManagerService();
+        zoomManagerService.initForComponent(this);
+    }
+    setCenterXAndY(x: number, y: number): void {
+        this.centerX = x;
+        this.centerY = y;
+    }
+}
+var EXPRESSION_END61 = { "EXPRESSION_END": "---------------------------" };

@@ -1,0 +1,172 @@
+Associated with;Overall file decorastors;Cycl. Number;Cycl. Density;Halstead Bugs;Halstead Difficulty;Halstead Effort;Halstead Length;Halstead Time;Halstead Vocabulary;Halstead Identifiers Distinct;Halstead Identifiers Total;Halstead Identifiers Names;Halstead Identifiers Distinct;Halstead Identifiers Total;Halstead Identifiers Names;LOC Physical;LOC Logical;Class Name;Class Maintainability;Class number methods;;;;Associated with;Overall file decorastors;Cycl. Number;Cycl. Density;Halstead Bugs;Halstead Difficulty;Halstead Effort;Halstead Length;Halstead Time;Halstead Vocabulary;Halstead Identifiers Distinct;Halstead Identifiers Total;Halstead Identifiers Names;Halstead Identifiers Distinct;Halstead Identifiers Total;Halstead Identifiers Names;LOC Physical;LOC Logical;Class Name;Class Maintainability;Class number methods;;;;;Associated with;Overall file decorastors;Cycl. Number;Cycl. Density;Halstead Bugs;Halstead Difficulty;Halstead Effort;Halstead Length;Halstead Time;Halstead Vocabulary;Halstead Identifiers Distinct;Halstead Identifiers Total;Halstead Identifiers Names;Halstead Identifiers Distinct;Halstead Identifiers Total;Halstead Identifiers Names;LOC Physical;LOC Logical;Class Name;Class Maintainability;Class number methods
+CLASS: AppRoutingModule;1;0;0;0,002;0;10,408;1;0,578;0;0;0;;0;1;;0;0;AppRoutingModule;0;0;;;AVERAGE;;;0;-0,209729412;0,005211765;0,024447059;-14,06656471;2,211764706;-0,781482353;0,588235294;0,694117647;0,705882353;#DELENIENULOU!;0,152941176;1,505882353;#DELENIENULOU!;0;0,364705882;#DELENIENULOU!;-0,077670588;5,047058824;;;;;CLASS: AppRoutingModule;1;0;0;0,002;0;10,408;1;0,578;0;0;0;0;0;1;0;0;0;#HODNOTA!;0;0
+CLASS: AppModule;1;0;0;0,002;0;21,792;1;1,211;0;0;0;;0;1;;0;0;AppModule;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: AppModule;1;0;0;0,002;0;21,792;1;1,211;0;0;0;0;0;1;0;0;0;AppModule;0;0
+CLASS: MainNavigationComponent;1;0;0;0,002;0;79,892;1;4,438;0;0;0;;0;1;;0;0;MainNavigationComponent;0;10;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: MainNavigationComponent;1;0;0;0,002;0;79,892;1;4,438;0;0;0;0;0;1;0;0;0;MainNavigationComponent;0;10
+CLASS: SmallMainMenuComponent;1;0;0;0,001;0;31,96;1;1,776;0;0;0;;0;1;;0;0;SmallMainMenuComponent;0;5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: SmallMainMenuComponent;1;0;0;0,001;0;31,96;1;1,776;0;0;0;0;0;1;0;0;0;SmallMainMenuComponent;0;5
+CLASS: DragAndDropDirective;1;0;0;0,002;0;80,489;1;4,472;0;0;0;;0;1;;0;0;DragAndDropDirective;0;8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DragAndDropDirective;1;0;0;0,002;0;80,489;1;4,472;0;0;0;0;0;1;0;0;0;DragAndDropDirective;0;8
+CLASS: RemoveDirective;1;0;0;1,00E-03;0;12,727;1;0,707;0;0;0;;0;1;;0;0;RemoveDirective;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: RemoveDirective;1;0;0;0,001;0;12,727;1;0,707;0;0;0;0;0;1;0;0;0;RemoveDirective;0;2
+CLASS: AppEffects;1;0;0;0,002;0;14,055;1;0,78;0;0;0;;0;1;;0;0;AppEffects;0;3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: AppEffects;1;0;0;0,002;0;14,055;1;0,78;0;0;0;0;0;1;0;0;0;AppEffects;0;3
+CLASS: DecoratorTypesService;0;0;0;0;0;0;0;0;0;0;0;;0;0;;0;0;DecoratorTypesService;0;14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorTypesService;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;DecoratorTypesService;0;0
+CLASS: ServiceToSkipService;0;0;0;0;0;0;0;0;0;0;0;;0;0;;0;0;ServiceToSkipService;0;1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ServiceToSkipService;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;ServiceToSkipService;0;0
+CLASS: FeatureConfigLoaderService;0;0;0;0;0;0;0;0;0;0;0;;0;0;;0;0;FeatureConfigLoaderService;0;4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: FeatureConfigLoaderService;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;FeatureConfigLoaderService;0;0
+CLASS: MenuManagerService;0;0;0;0;0;0;0;0;0;0;0;;0;0;;0;0;MenuManagerService;0;10;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: MenuManagerService;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;MenuManagerService;0;0
+CLASS: PuzzleAlgorithmManagerService;0;0;0;0;0;0;0;0;0;0;0;;0;0;;0;0;PuzzleAlgorithmManagerService;0;3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: PuzzleAlgorithmManagerService;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;PuzzleAlgorithmManagerService;0;0
+CLASS: VariableSettingsConfigService;0;0;0;0;0;0;0;0;0;0;0;;0;0;;0;0;VariableSettingsConfigService;0;8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: VariableSettingsConfigService;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;VariableSettingsConfigService;0;0
+CLASS: ZoomSettingsConfigService;0;0;0;0;0;0;0;0;0;0;0;;0;0;;0;0;ZoomSettingsConfigService;0;15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ZoomSettingsConfigService;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;ZoomSettingsConfigService;0;0
+CLASS: TreeManagerService;0;0;0;0;0;0;0;0;0;0;0;;0;0;;0;0;TreeManagerService;0;1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: TreeManagerService;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;TreeManagerService;0;0
+CLASS: AnnotationExtractorService;0;0;0;0;0;0;0;0;0;0;0;;0;0;;0;0;AnnotationExtractorService;0;5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: AnnotationExtractorService;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;AnnotationExtractorService;0;0
+CLASS: ComponentFactoryService;0;0;0;0;0;0;0;0;0;0;0;;0;0;;0;0;ComponentFactoryService;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ComponentFactoryService;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;ComponentFactoryService;0;0
+CLASS: FabricMenuHelperService;0;0;0;0;0;0;0;0;0;0;0;;0;0;;0;0;FabricMenuHelperService;0;1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: FabricMenuHelperService;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;FabricMenuHelperService;0;0
+CLASS: GameConfigurationComponent;12;0;-1,06;0,059;0,144;2391,851;25;132,88;5;15;10;"['JIGSAW', 'ANTI-JIGSAW', 'JIGSAW2'],""puzzleAlgorithmType"",""['JIGSAW2']"",EXPRESSION_START7,EXPRESSION_START8,EXPRESSION_START9,EXPRESSION_END9,EXPRESSION_END8,EXPRESSION_END7,EXPRESSION_END11,EXPRESSION_END10,EXPRESSION_START11,EXPRESSION_START10,""['ANTI-JIGSAW']"",""['JIGSAW']""";0;15;;0;5;GameConfigurationComponent;-2,944;3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: GameConfigurationComponent;12;0;-0,088333333;0,004916667;0,012;199,3209167;2,083333333;11,07333333;0,416666667;1,25;0,833333333;#HODNOTA!;0;1,25;0;0;0,416666667;GameConfigurationComponent;-0,245333333;0,25
+CLASS: MaterialModule;1;0;0;1,00E-03;0;10,09;1;0,561;0;0;0;;0;1;;0;0;MaterialModule;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: MaterialModule;1;0;0;0,001;0;10,09;1;0,561;0;0;0;0;0;1;0;0;0;MaterialModule;0;0
+CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;;1;1;{};0;0;DecoratorFileCopy;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;0;1;1;#HODNOTA!;0;0;DecoratorFileCopy;0;0
+CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;;1;1;{};0;0;DecoratorFileCopy;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;0;1;1;#HODNOTA!;0;0;DecoratorFileCopy;0;0
+CLASS: RoutingModelMock;7;0;0;0;0;0;0;0;0;0;0;;0;0;;0;0;RoutingModelMock;0;1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: RoutingModelMock;7;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;RoutingModelMock;0;0,142857143
+CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;;1;1;{};0;0;DecoratorFileCopy;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;0;1;1;#HODNOTA!;0;0;DecoratorFileCopy;0;0
+CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;;1;1;{};0;0;DecoratorFileCopy;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;0;1;1;#HODNOTA!;0;0;DecoratorFileCopy;0;0
+CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;;1;1;{};0;0;DecoratorFileCopy;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;0;1;1;#HODNOTA!;0;0;DecoratorFileCopy;0;0
+CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;;1;1;{};0;0;DecoratorFileCopy;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;0;1;1;#HODNOTA!;0;0;DecoratorFileCopy;0;0
+CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;;1;1;{};0;0;DecoratorFileCopy;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;0;1;1;#HODNOTA!;0;0;DecoratorFileCopy;0;0
+CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;;1;1;{};0;0;DecoratorFileCopy;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;0;1;1;#HODNOTA!;0;0;DecoratorFileCopy;0;0
+CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;;1;1;{};0;0;DecoratorFileCopy;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;0;1;1;#HODNOTA!;0;0;DecoratorFileCopy;0;0
+CLASS: AppComponent;3;0;0;0;0;0;0;0;0;0;0;;0;0;;0;0;AppComponent;0;1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: AppComponent;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;AppComponent;0;0,333333333
+CLASS: DragAndDropImageComponent;1;0;0;0,002;0;126,125;1;7,007;0;0;0;;0;1;;0;0;DragAndDropImageComponent;0;11;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DragAndDropImageComponent;1;0;0;0,002;0;126,125;1;7,007;0;0;0;0;0;1;0;0;0;DragAndDropImageComponent;0;11
+CLASS: ZoomBlockComponent;1;0;-3,571;0,007;0;50,503;4;2,806;2;2;2;"true,""zoom""";0;2;;0;1;ZoomBlockComponent;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ZoomBlockComponent;1;0;-3,571;0,007;0;50,503;4;2,806;2;2;2;#HODNOTA!;0;2;0;0;1;ZoomBlockComponent;0;2
+CLASS: ZoomMenuComponent;1;0;-0,833;0,01;-0,248;105,356;4;5,853;2;2;2;"true,""zoom""";0;2;;0;1;ZoomMenuComponent;0;5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ZoomMenuComponent;1;0;-0,833;0,01;-0,248;105,356;4;5,853;2;2;2;#HODNOTA!;0;2;0;0;1;ZoomMenuComponent;0;5
+CLASS: GalleryBottomSheetComponent;1;0;-2,222;0,008;-0,047;67,903;4;3,773;2;2;2;"imageGallery,""true""";0;2;;0;1;GalleryBottomSheetComponent;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: GalleryBottomSheetComponent;1;0;-2,222;0,008;-0,047;67,903;4;3,773;2;2;2;#HODNOTA!;0;2;0;0;1;GalleryBottomSheetComponent;0;2
+CLASS: InsertTemplateImageBottomSheetComponent;1;0;0;0,002;0;14,934;1;0,83;0;0;0;;0;1;;0;0;InsertTemplateImageBottomSheetComponent;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: InsertTemplateImageBottomSheetComponent;1;0;0;0,002;0;14,934;1;0,83;0;0;0;0;0;1;0;0;0;InsertTemplateImageBottomSheetComponent;0;2
+CLASS: PuzzleChooserBottomSheetComponent;1;0;0;0,002;0;14,934;1;0,83;0;0;0;;0;1;;0;0;PuzzleChooserBottomSheetComponent;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: PuzzleChooserBottomSheetComponent;1;0;0;0,002;0;14,934;1;0,83;0;0;0;0;0;1;0;0;0;PuzzleChooserBottomSheetComponent;0;2
+CLASS: TemplatePreviewBottomSheetComponent;1;0;0;0,002;0;14,934;1;0,83;0;0;0;;0;1;;0;0;TemplatePreviewBottomSheetComponent;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: TemplatePreviewBottomSheetComponent;1;0;0;0,002;0;14,934;1;0,83;0;0;0;0;0;1;0;0;0;TemplatePreviewBottomSheetComponent;0;2
+CLASS: ZoomManagementBottomSheetComponent;1;0;0;0,002;0;14,934;1;0,83;0;0;0;;0;1;;0;0;ZoomManagementBottomSheetComponent;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ZoomManagementBottomSheetComponent;1;0;0;0,002;0;14,934;1;0,83;0;0;0;0;0;1;0;0;0;ZoomManagementBottomSheetComponent;0;2
+CLASS: GalleryComponent;1;0;-2,273;0,007;-0,032;83,161;4;4,62;2;2;2;"imageGallery,""true""";0;2;;0;1;GalleryComponent;0;3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: GalleryComponent;1;0;-2,273;0,007;-0,032;83,161;4;4,62;2;2;2;#HODNOTA!;0;2;0;0;1;GalleryComponent;0;3
+CLASS: InitialPageComponent;1;0;0;0,002;0;22,797;1;1,266;0;0;0;;0;1;;0;0;InitialPageComponent;0;5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: InitialPageComponent;1;0;0;0,002;0;22,797;1;1,266;0;0;0;0;0;1;0;0;0;InitialPageComponent;0;5
+CLASS: InsertTemplateImageComponent;1;0;0;0,001;0;9,518;1;0,528;0;0;0;;0;1;;0;0;InsertTemplateImageComponent;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: InsertTemplateImageComponent;1;0;0;0,001;0;9,518;1;0,528;0;0;0;0;0;1;0;0;0;InsertTemplateImageComponent;0;0
+CLASS: PuzzleBoardComponent;1;0;0;0,002;0;20,161;1;1,12;0;0;0;;0;1;;0;0;PuzzleBoardComponent;0;4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: PuzzleBoardComponent;1;0;0;0,002;0;20,161;1;1,12;0;0;0;0;0;1;0;0;0;PuzzleBoardComponent;0;4
+CLASS: PuzzleBuilderComponent;1;0;0;0,002;0;9,767;1;0,543;0;0;0;;0;1;;0;0;PuzzleBuilderComponent;0;1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: PuzzleBuilderComponent;1;0;0;0,002;0;9,767;1;0,543;0;0;0;0;0;1;0;0;0;PuzzleBuilderComponent;0;1
+CLASS: PuzzleChooserComponent;1;0;0;0,002;0;24,49;1;1,361;0;0;0;;0;1;;0;0;PuzzleChooserComponent;0;4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: PuzzleChooserComponent;1;0;0;0,002;0;24,49;1;1,361;0;0;0;0;0;1;0;0;0;PuzzleChooserComponent;0;4
+CLASS: TemplatePreviewComponent;1;0;0;0,002;0;32,67;1;1,815;0;0;0;;0;1;;0;0;TemplatePreviewComponent;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: TemplatePreviewComponent;1;0;0;0,002;0;32,67;1;1,815;0;0;0;0;0;1;0;0;0;TemplatePreviewComponent;0;2
+CLASS: SetZoomComponent;1;0;-2,222;0,008;-0,065;82,313;4;4,572;2;2;2;"zoomValue,""true""";0;2;;0;1;SetZoomComponent;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: SetZoomComponent;1;0;-2,222;0,008;-0,065;82,313;4;4,572;2;2;2;#HODNOTA!;0;2;0;0;1;SetZoomComponent;0;2
+CLASS: SetZoomPositionComponent;1;0;-0,953;0,008;-0,147;116,866;4;6,492;2;2;2;"zoomCoordinates,""true""";0;2;;0;1;SetZoomPositionComponent;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: SetZoomPositionComponent;1;0;-0,953;0,008;-0,147;116,866;4;6,492;2;2;2;#HODNOTA!;0;2;0;0;1;SetZoomPositionComponent;0;2
+CLASS: ZoomManagementComponent;11;0;-1,443;0,077;0,314;6161,301;30;342,295;4;8;14;"zoomValue,EXPRESSION_END59,EXPRESSION_END58,""zoom"",EXPRESSION_START59,EXPRESSION_START58,""zoomCoordinates"",""true""";0;16;;0;7;ZoomManagementComponent;-2,112;24;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ZoomManagementComponent;11;0;-0,131181818;0,007;0,028545455;560,1182727;2,727272727;31,11772727;0,363636364;0,727272727;1,272727273;#HODNOTA!;0;1,454545455;0;0;0,636363636;ZoomManagementComponent;-0,192;2,181818182
+CLASS: PuzzleBuilderRoutingModule;1;0;0;0,001;0;13,2;1;0,733;0;0;0;;0;1;;0;0;PuzzleBuilderRoutingModule;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: PuzzleBuilderRoutingModule;1;0;0;0,001;0;13,2;1;0,733;0;0;0;0;0;1;0;0;0;PuzzleBuilderRoutingModule;0;0
+CLASS: PuzzleBuilderModule;17;0;0;0,002;0;16,236;1;0,902;0;0;0;;0;1;;0;0;PuzzleBuilderModule;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: PuzzleBuilderModule;17;0;0;0,000117647;0;0,955058824;0,058823529;0,053058824;0;0;0;0;0;0,058823529;0;0;0;PuzzleBuilderModule;0;0
+CLASS: ComponentFactoryService;1;0;0;0,002;0;74,406;1;4,134;0;0;0;;0;1;;0;0;ComponentFactoryService;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ComponentFactoryService;1;0;0;0,002;0;74,406;1;4,134;0;0;0;0;0;1;0;0;0;ComponentFactoryService;0;2
+CLASS: GameConfigurationService;10;0;-0,98;0,024;0,081;877,379;11;48,743;2;10;4;"puzzleQuatroAlter21,""puzzleAlgorithmType"",EXPRESSION_END102,puzzleQuatro2Alter22,ELSE102,ELSE103,EXPRESSION_START103,EXPRESSION_START102,""['JIGSAW', 'JIGSAW2']"",EXPRESSION_END103";0;7;;0;2;GameConfigurationService;-1,546;4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: GameConfigurationService;10;0;-0,098;0,0024;0,0081;87,7379;1,1;4,8743;0,2;1;0,4;#HODNOTA!;0;0,7;0;0;0,2;GameConfigurationService;-0,1546;0,4
+CLASS: OldPuzzleService;1;0;0;0,003;0;138,691;1;7,705;0;0;0;;0;1;;0;0;OldPuzzleService;0;5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: OldPuzzleService;1;0;0;0,003;0;138,691;1;7,705;0;0;0;0;0;1;0;0;0;OldPuzzleService;0;5
+CLASS: BringToBackService;1;0;0;0,002;0;54,947;1;3,052;0;0;0;;0;1;;0;0;BringToBackService;0;4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: BringToBackService;1;0;0;0,002;0;54,947;1;3,052;0;0;0;0;0;1;0;0;0;BringToBackService;0;4
+CLASS: BringToFrontService;1;0;0;0,002;0;56,433;1;3,136;0;0;0;;0;1;;0;0;BringToFrontService;0;4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: BringToFrontService;1;0;0;0,002;0;56,433;1;3,136;0;0;0;0;0;1;0;0;0;BringToFrontService;0;4
+CLASS: BottomLeftFabricMenuService;1;0;0;0,002;0;112,834;1;6,269;0;0;0;;0;1;;0;0;BottomLeftFabricMenuService;0;13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: BottomLeftFabricMenuService;1;0;0;0,002;0;112,834;1;6,269;0;0;0;0;0;1;0;0;0;BottomLeftFabricMenuService;0;13
+CLASS: BottomRightFabricMenuService;1;0;0;0,002;0;103,467;1;5,748;0;0;0;;0;1;;0;0;BottomRightFabricMenuService;0;13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: BottomRightFabricMenuService;1;0;0;0,002;0;103,467;1;5,748;0;0;0;0;0;1;0;0;0;BottomRightFabricMenuService;0;13
+CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;;1;1;{};0;0;DecoratorFileCopy;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;0;1;1;#HODNOTA!;0;0;DecoratorFileCopy;0;0
+CLASS: PuzzleControllerManagerService2;1;0;0;0,002;0;149,479;1;8,304;0;0;0;;0;1;;0;0;PuzzleControllerManagerService2;0;10;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: PuzzleControllerManagerService2;1;0;0;0,002;0;149,479;1;8,304;0;0;0;0;0;1;0;0;0;PuzzleControllerManagerService2;0;10
+CLASS: TopLeftFabricMenuService;1;0;0;0,002;0;119,05;1;6,614;0;0;0;;0;1;;0;0;TopLeftFabricMenuService;0;13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: TopLeftFabricMenuService;1;0;0;0,002;0;119,05;1;6,614;0;0;0;0;0;1;0;0;0;TopLeftFabricMenuService;0;13
+CLASS: TopRightFabricMenuService;1;0;0;0,002;0;126,885;1;7,049;0;0;0;;0;1;;0;0;TopRightFabricMenuService;0;13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: TopRightFabricMenuService;1;0;0;0,002;0;126,885;1;7,049;0;0;0;0;0;1;0;0;0;TopRightFabricMenuService;0;13
+CLASS: DeletePuzzleServiceService;1;0;0;0,002;0;60,529;1;3,362;0;0;0;;0;1;;0;0;DeletePuzzleServiceService;0;4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DeletePuzzleServiceService;1;0;0;0,002;0;60,529;1;3,362;0;0;0;0;0;1;0;0;0;DeletePuzzleServiceService;0;4
+CLASS: HelpPuzzleServiceService;1;0;0;0,002;0;65,344;1;3,63;0;0;0;;0;1;;0;0;HelpPuzzleServiceService;0;4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: HelpPuzzleServiceService;1;0;0;0,002;0;65,344;1;3,63;0;0;0;0;0;1;0;0;0;HelpPuzzleServiceService;0;4
+CLASS: PuzzleController;1;0;0;0,001;0;7,907;1;0,439;0;0;0;;0;1;;0;0;PuzzleController;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: PuzzleController;1;0;0;0,001;0;7,907;1;0,439;0;0;0;0;0;1;0;0;0;PuzzleController;0;0
+CLASS: PuzzleControllerManagerService;1;0;0;0,003;0;141,735;1;7,874;0;0;0;;0;1;;0;0;PuzzleControllerManagerService;0;11;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: PuzzleControllerManagerService;1;0;0;0,003;0;141,735;1;7,874;0;0;0;0;0;1;0;0;0;PuzzleControllerManagerService;0;11
+CLASS: ManipulationHandlerService;1;0;0;0,002;0;160,423;1;8,913;0;0;0;;0;1;;0;0;ManipulationHandlerService;0;8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ManipulationHandlerService;1;0;0;0,002;0;160,423;1;8,913;0;0;0;0;0;1;0;0;0;ManipulationHandlerService;0;8
+CLASS: ResizeHandlerService;1;0;0;0,002;0;134,931;1;7,496;0;0;0;;0;1;;0;0;ResizeHandlerService;0;9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ResizeHandlerService;1;0;0;0,002;0;134,931;1;7,496;0;0;0;0;0;1;0;0;0;ResizeHandlerService;0;9
+CLASS: ZoomManagerService;1;0;0;0,002;0;139,821;1;7,768;0;0;0;;0;1;;0;0;ZoomManagerService;0;13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ZoomManagerService;1;0;0;0,002;0;139,821;1;7,768;0;0;0;0;0;1;0;0;0;ZoomManagerService;0;13
+CLASS: DrawAdjacentPointsService;1;0;0;0,003;0;595,415;1;33,079;0;0;0;;0;1;;0;0;DrawAdjacentPointsService;0;7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DrawAdjacentPointsService;1;0;0;0,003;0;595,415;1;33,079;0;0;0;0;0;1;0;0;0;DrawAdjacentPointsService;0;7
+CLASS: ImageSizeManagerService;1;0;0;0,001;0;139,543;1;7,752;0;0;0;;0;1;;0;0;ImageSizeManagerService;0;3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ImageSizeManagerService;1;0;0;0,001;0;139,543;1;7,752;0;0;0;0;0;1;0;0;0;ImageSizeManagerService;0;3
+CLASS: ManageGraphicsService;1;0;0;0,003;0;286,972;1;15,943;0;0;0;;0;1;;0;0;ManageGraphicsService;0;19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ManageGraphicsService;1;0;0;0,003;0;286,972;1;15,943;0;0;0;0;0;1;0;0;0;ManageGraphicsService;0;19
+CLASS: PuzzleManagerService;5;0;-1,884;0,07;-0,513;2849,263;24;158,292;6;6;12;"puzzleAlgorithmType,""['ANTI-JIGSAW']"",""NOT ['JIGSAW', 'JIGSAW2']"",""AND"",""NOT ['JIGSAW', 'JIGSAW2', 'ANTI-JIGSAW']"",""['JIGSAW', 'JIGSAW2']""";0;12;;0;7;PuzzleManagerService;0;15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: PuzzleManagerService;5;0;-0,3768;0,014;-0,1026;569,8526;4,8;31,6584;1,2;1,2;2,4;#HODNOTA!;0;2,4;0;0;1,4;PuzzleManagerService;0;3
+CLASS: DrawBordersService;1;0;-0,098;0,017;-1,094;-4888,728;4;-271,596;2;2;2;"puzzleAlgorithmType,""['JIGSAW', 'JIGSAW2']""";0;2;;0;1;DrawBordersService;0;13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DrawBordersService;1;0;-0,098;0,017;-1,094;-4888,728;4;-271,596;2;2;2;#HODNOTA!;0;2;0;0;1;DrawBordersService;0;13
+CLASS: PuzzleGeneratorQuadroService;1;0;-0,094;0,017;-0,876;-4142,123;4;-230,117;2;2;2;"puzzleAlgorithmType,""['JIGSAW', 'JIGSAW2']""";0;2;;0;1;PuzzleGeneratorQuadroService;0;16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: PuzzleGeneratorQuadroService;1;0;-0,094;0,017;-0,876;-4142,123;4;-230,117;2;2;2;#HODNOTA!;0;2;0;0;1;PuzzleGeneratorQuadroService;0;16
+CLASS: DrawBordersService2;1;0;-0,1;0,016;-1,063;-4573,909;4;-254,106;2;2;2;"puzzleAlgorithmType,""['ANTI-JIGSAW']""";0;2;;0;1;DrawBordersService2;0;13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DrawBordersService2;1;0;-0,1;0,016;-1,063;-4573,909;4;-254,106;2;2;2;#HODNOTA!;0;2;0;0;1;DrawBordersService2;0;13
+CLASS: PuzzleGeneratorQuadroService2;1;0;-0,094;0,017;-0,876;-4142,123;4;-230,117;2;2;2;"puzzleAlgorithmType,""['ANTI-JIGSAW']""";0;2;;0;1;PuzzleGeneratorQuadroService2;0;16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: PuzzleGeneratorQuadroService2;1;0;-0,094;0,017;-0,876;-4142,123;4;-230,117;2;2;2;#HODNOTA!;0;2;0;0;1;PuzzleGeneratorQuadroService2;0;16
+CLASS: ScanLineService;1;0;0;0,002;0;85,47;1;4,748;0;0;0;;0;1;;0;0;ScanLineService;0;6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ScanLineService;1;0;0;0,002;0;85,47;1;4,748;0;0;0;0;0;1;0;0;0;ScanLineService;0;6
+CLASS: SetPuzzleAreaOnBoardService;1;0;0;0,002;0;185;1;10,277;0;0;0;;0;1;;0;0;SetPuzzleAreaOnBoardService;0;14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: SetPuzzleAreaOnBoardService;1;0;0;0,002;0;185;1;10,277;0;0;0;0;0;1;0;0;0;SetPuzzleAreaOnBoardService;0;14
+CLASS: DisableControlsService;1;0;0;0,001;0;31,375;1;1,743;0;0;0;;0;1;;0;0;DisableControlsService;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DisableControlsService;1;0;0;0,001;0;31,375;1;1,743;0;0;0;0;0;1;0;0;0;DisableControlsService;0;2
+CLASS: RandomUtilsService;1;0;0;0,002;0;24,851;1;1,381;0;0;0;;0;1;;0;0;RandomUtilsService;0;1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: RandomUtilsService;1;0;0;0,002;0;24,851;1;1,381;0;0;0;0;0;1;0;0;0;RandomUtilsService;0;1
+CLASS: ShufflePuzzlesService;1;0;0;0,001;0;51,326;1;2,851;0;0;0;;0;1;;0;0;ShufflePuzzlesService;0;2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: ShufflePuzzlesService;1;0;0;0,001;0;51,326;1;2,851;0;0;0;0;0;1;0;0;0;ShufflePuzzlesService;0;2
+CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;;1;1;{};0;0;DecoratorFileCopy;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;0;1;1;#HODNOTA!;0;0;DecoratorFileCopy;0;0
+CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;;1;1;{};0;0;DecoratorFileCopy;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;0;1;1;#HODNOTA!;0;0;DecoratorFileCopy;0;0
+CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;;1;1;{};0;0;DecoratorFileCopy;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CLASS: DecoratorFileCopy;1;0;0;0,001;0,5;9,414;1;0,523;1;0;0;0;1;1;#HODNOTA!;0;0;DecoratorFileCopy;0;0
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,000117647;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,001;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,002;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,0024;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,003;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,003;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,003;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,003;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,004916667;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,007;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,007;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,007;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,008;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,008;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,008;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,01;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,014;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,016;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,017;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,017;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0,017;;;;;;;;;;;;;;;;

@@ -1,0 +1,15 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/models/polygon-ts
+import { DecoratorTypesService } from "../featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+import { Point } from "./point";
+export enum Connection {
+    hole,
+    fill,
+    none
+}
+class DecoratorFileCopy {
+}
+export interface Polygon {
+    points: Point[];
+    connections: Connection[];
+    innerCircles: ImageData[];
+}

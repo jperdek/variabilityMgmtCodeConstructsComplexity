@@ -1,0 +1,17 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/puzzle-builder/pages/bottom-sheets/insert-template-image-bottom-sheet/insert-template-image-bottom-sheet-component-ts
+import { Component } from "@angular/core";
+import { MatBottomSheetRef } from "@angular/material/bottom-sheet";
+import { DecoratorTypesService } from "src/app/featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+@Component({
+    selector: "app-insert-template-image-bottom-sheet",
+    templateUrl: "./insert-template-image-bottom-sheet.component.html",
+    styleUrls: ["./insert-template-image-bottom-sheet.component.scss"]
+})
+@DecoratorTypesService.wholeBlockFile({})
+export class InsertTemplateImageBottomSheetComponent {
+    constructor(bottomSheetRef: MatBottomSheetRef<InsertTemplateImageBottomSheetComponent>) { }
+    public openLink(event: MouseEvent): void {
+        this.bottomSheetRef.dismiss();
+        event.preventDefault();
+    }
+}

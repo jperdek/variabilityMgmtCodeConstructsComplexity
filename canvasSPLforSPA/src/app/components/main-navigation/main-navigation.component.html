@@ -1,0 +1,33 @@
+
+<mat-toolbar color="primary">
+    <mat-toolbar-row class="puzzle-design-panel">
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span class="main-menu-text">Puzzle to play</span>
+        <span class="menu-spacer"></span>
+        <div fxShow="true" fxHide.lt-md>
+            <button class="menu-component-item" color="accent" mat-button [routerLink]="menuConfig.path" *ngFor="let menuConfig of getMenu()">
+                <span class="menu-text">{{menuConfig.name}}</span>
+            </button>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container fxFlexFill class="sidenav-block" fxHide.gt-sm>
+    <mat-sidenav #sidenav>
+        <mat-nav-list class="main-menu-navlist">
+            <a [routerLink]="menuConfig.path" mat-list-item fxHide.lt-sm *ngFor="let menuConfig of getMenu()">
+                <mat-icon>load</mat-icon>
+                <span class="menu-text-small">{{menuConfig.name}}</span>
+            </a>
+
+            <a (click)="openBottomSheet(menuConfig.bottomSheetComponent)" mat-list-item fxHide.gt-xs *ngFor="let menuConfig of getMenu()">
+                <mat-icon>load</mat-icon>
+                <span class="menu-text-small">{{menuConfig.name}}</span>
+            </a>
+
+            <div class="vertical-spacer"></div>
+            <mat-slide-toggle class="zoom-toggles" (change)="toggleZoom($event)" >Show / hide zoom</mat-slide-toggle>
+        </mat-nav-list>
+    </mat-sidenav>
+</mat-sidenav-container>

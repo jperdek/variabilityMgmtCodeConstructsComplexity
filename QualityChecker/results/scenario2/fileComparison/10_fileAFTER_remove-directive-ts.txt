@@ -1,0 +1,12 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/directives/remove-directive-ts
+import { Directive, ElementRef } from "@angular/core";
+@Directive({
+    selector: "[appRemove]"
+})
+export class RemoveDirective {
+    constructor(element: ElementRef) {
+        element.nativeElement.addEventListener("click", () => {
+            element.nativeElement.remove();
+        });
+    }
+}

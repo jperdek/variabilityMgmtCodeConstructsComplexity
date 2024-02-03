@@ -1,0 +1,85 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/game-configuration/game-configuration-component-ts
+import { Component } from "@angular/core";
+import { FormControl, FormGroup } from "@angular/forms";
+import { DomSanitizer } from "@angular/platform-browser";
+import { DecoratorTypesService } from "../featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+var EXPRESSION_START0 = { "puzzleAlgorithmType": "['JIGSAW', 'ANTI-JIGSAW', 'JIGSAW2']" };
+import { Store } from "@ngrx/store";
+var EXPRESSION_END0 = { "EXPRESSION_END": "---------------------------" };
+//import { Store } from '@ngrx/store';
+import { AlgorithmMap } from "../models/algorithmMap";
+import { GameConfigurationService } from "../services/game-configuration.service";
+import { ManipulationHandlerService } from "../services/puzzleEvents/manipulation-handler.service";
+import { ResizeHandlerService } from "../services/puzzleEvents/resize-handler.service";
+import { ZoomManagerService } from "../services/puzzleEvents/zoom-manager.service";
+import { ImageSizeManagerService } from "../services/puzzleGenerator/image-size-manager.service";
+import { ManageGraphicsService } from "../services/puzzleGenerator/manage-puzzle.service";
+import { PuzzleManagerService } from "../services/puzzleGenerator/puzzle-manager.service";
+var EXPRESSION_START1 = { "puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']" };
+import { DrawBordersService } from "../services/puzzleGenerator/puzzleRenderingAlgorithm/algorithm1/draw-borders.service";
+var EXPRESSION_END1 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START2 = { "puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']" };
+import { PuzzleGeneratorQuadroService } from "../services/puzzleGenerator/puzzleRenderingAlgorithm/algorithm1/puzzle-generator-quadro.service";
+var EXPRESSION_END2 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START3 = { "puzzleAlgorithmType": "['ANTI-JIGSAW']" };
+import { DrawBordersService2 } from "../services/puzzleGenerator/puzzleRenderingAlgorithm/algorithm2/draw-borders2.service";
+var EXPRESSION_END3 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START4 = { "puzzleAlgorithmType": "['ANTI-JIGSAW']" };
+import { PuzzleGeneratorQuadroService2 } from "../services/puzzleGenerator/puzzleRenderingAlgorithm/algorithm2/puzzle-generator-quadro2.service";
+var EXPRESSION_END4 = { "EXPRESSION_END": "---------------------------" };
+//import { PuzzleGeneratorQuadroService2 } from '../services/puzzleGenerator/puzzleRenderingAlgorithm/algorithm2/puzzle-generator-quadro2.service';
+import { SetPuzzleAreaOnBoardService } from "../services/puzzleGenerator/set-puzzle-area-on-board.service";
+import { DisableControlsService } from "../services/utils/disable-controls.service";
+import { ServiceToSkipService } from "../featureManagement/decoratorsVariationPointManagement/service-to-skip.service";
+var EXPRESSION_START5 = { "puzzleAlgorithmType": "['JIGSAW', 'ANTI-JIGSAW', 'JIGSAW2']" };
+import { ShufflePuzzlesService } from "../services/utils/shuffle-puzzles.service";
+var EXPRESSION_END5 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START6 = { "puzzleAlgorithmType": "['JIGSAW', 'ANTI-JIGSAW', 'JIGSAW2']" };
+import { PuzzleAppState } from "../store";
+var EXPRESSION_END6 = { "EXPRESSION_END": "---------------------------" };
+//import { PuzzleAppState } from '../store';
+@Component({
+    selector: "app-game-configuration",
+    templateUrl: "./game-configuration.component.html",
+    styleUrls: ["./game-configuration.component.scss"]
+})
+export class GameConfigurationComponent {
+    configurationFormGroup = new FormGroup({
+        algorithm: new FormControl("None", [])
+    });
+    constructor(
+    @DecoratorTypesService.skipLineParameter({ "puzzleAlgorithmType": "['JIGSAW', 'ANTI-JIGSAW', 'JIGSAW2']" }, " store: Store<PuzzleAppState>,")
+    store:  Store<PuzzleAppState>, // store: Store<PuzzleAppState>,
+    @DecoratorTypesService.skipLineParameter({ "puzzleAlgorithmType": "['JIGSAW', 'ANTI-JIGSAW', 'JIGSAW2']" }, " shufflePuzzlesService: ShufflePuzzlesService,")
+    shufflePuzzlesService:  ShufflePuzzlesService, // shufflePuzzlesService: ShufflePuzzlesService,
+    @DecoratorTypesService.skipLineParameter({ "puzzleAlgorithmType": "['ANTI-JIGSAW']" }, " drawBordersService2: DrawBordersService2,")
+    drawBordersService2:  DrawBordersService2, // drawBordersService2: DrawBordersService2,
+    @DecoratorTypesService.skipLineParameter({ "puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']" }, " drawBordersService: DrawBordersService,")
+    drawBordersService:  DrawBordersService, // drawBordersService: DrawBordersService,
+    manageGraphicsService: ManageGraphicsService, setPuzzleAreaOnBoardService: SetPuzzleAreaOnBoardService, imageSizeManagerService: ImageSizeManagerService, sanitizer: DomSanitizer, manipulationHandlerService: ManipulationHandlerService, resizeHandlerService: ResizeHandlerService, zoomManagerService: ZoomManagerService, disableControlsService: DisableControlsService, gameConfiguration: GameConfigurationService) {
+        var EXPRESSION_START7 = { "puzzleAlgorithmType": "['JIGSAW', 'ANTI-JIGSAW', 'JIGSAW2']" };
+        let algorithms: any = [];
+        var EXPRESSION_END7 = { "EXPRESSION_END": "---------------------------" };
+        var EXPRESSION_START8 = { "puzzleAlgorithmType": "['JIGSAW']" };
+        algorithms.push({ "name": "Old jigsaw", "instance": new PuzzleGeneratorQuadroService(this.drawBordersService, this.store, this.shufflePuzzlesService) });
+        var EXPRESSION_END8 = { "EXPRESSION_END": "---------------------------" };
+        var EXPRESSION_START9 = { "puzzleAlgorithmType": "['ANTI-JIGSAW']" };
+        algorithms.push({ "name": "Anti jigsaw", "instance": new PuzzleGeneratorQuadroService2(this.drawBordersService2, this.store, this.shufflePuzzlesService) });
+        var EXPRESSION_END9 = { "EXPRESSION_END": "---------------------------" };
+        var EXPRESSION_START10 = { "puzzleAlgorithmType": "['JIGSAW2']" };
+        algorithms.push({ "name": "Old jigsaw 2", "instance": new PuzzleGeneratorQuadroService(this.drawBordersService, this.store, this.shufflePuzzlesService) });
+        var EXPRESSION_END10 = { "EXPRESSION_END": "---------------------------" };
+        var EXPRESSION_START11 = { "puzzleAlgorithmType": "['JIGSAW', 'ANTI-JIGSAW', 'JIGSAW2']" };
+        this.gameConfiguration.setAlgorithms(algorithms);
+        var EXPRESSION_END11 = { "EXPRESSION_END": "---------------------------" };
+    }
+    getAvailableAlgorithms(): AlgorithmMap[] {
+        return this.gameConfiguration.getAlgorithms();
+    }
+    public startNewGame(): void {
+        const algorithmsConfig = this.gameConfiguration.getAlgorithms()[Number(this.configurationFormGroup.controls.algorithm.value)].instance;
+        if (algorithmsConfig !== null) {
+            new PuzzleManagerService(algorithmsConfig, this.manageGraphicsService, this.setPuzzleAreaOnBoardService, this.imageSizeManagerService, this.sanitizer, this.manipulationHandlerService, this.resizeHandlerService, this.zoomManagerService, this.disableControlsService).startGame();
+        }
+    }
+}

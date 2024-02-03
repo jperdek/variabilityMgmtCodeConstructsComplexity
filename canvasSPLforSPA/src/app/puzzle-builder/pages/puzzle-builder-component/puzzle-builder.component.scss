@@ -1,0 +1,19 @@
+@import "../../../styles/layout-settings.scss";
+
+.drawer-content {
+  height: 100%;
+
+  @media (min-width: 960px) {
+    .puzzle-chooser-drawer {
+      width: $large-left-panel-size;
+      background-image: url("/assets/designImages/puzzlePanelColumn.svg");
+    }
+  }
+
+  @media (max-width: 960px) {
+    .puzzle-chooser-drawer {
+      width: $medium-left-panel-size;
+      background-image: url("/assets/designImages/puzzlePanelColumn.svg");
+    }
+  }
+}

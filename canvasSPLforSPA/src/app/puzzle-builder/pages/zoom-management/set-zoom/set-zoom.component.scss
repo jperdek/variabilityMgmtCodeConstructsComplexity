@@ -1,0 +1,56 @@
+@import "../../../../styles/color-settings.scss";
+
+
+.zoom-focus-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  color: $mild-green;
+
+  ::ng-deep .mat-form-field-prefix,
+  ::ng-deep .mat-form-field-suffix {
+    white-space: nowrap;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: static;
+    padding: 0;
+  }
+
+  .suffix-set-zoom-button {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 40px;
+    background-color: $white-light-color-transparency;
+    border-radius: 25px;
+  }
+
+  ::ng-deep .mat-form-field-label {
+    color: $mild-green-transparency;
+  }
+
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: $mild-green-transparency;
+  }
+
+  ::ng-deep .mat-form-field-label:hover {
+    color: $mild-green;
+  }
+
+  .center-input-part ~ .center-input-part {
+    margin-left: 4%;
+  }
+
+  .center-input-part {
+    width: 38%;
+
+    .center-input {
+      width: 100%;
+    }
+  }
+}

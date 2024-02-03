@@ -1,0 +1,1140 @@
+{
+    "ast": {
+        "pos": 0,
+        "end": 897,
+        "flags": 0,
+        "modifierFlagsCache": 0,
+        "transformFlags": 33555585,
+        "kind": 308,
+        "statements": [
+            {
+                "pos": 0,
+                "end": 42,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 269,
+                "importClause": {
+                    "pos": 6,
+                    "end": 20,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 270,
+                    "isTypeOnly": false,
+                    "namedBindings": {
+                        "pos": 6,
+                        "end": 20,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 272,
+                        "elements": [
+                            {
+                                "pos": 8,
+                                "end": 18,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 273,
+                                "isTypeOnly": false,
+                                "name": {
+                                    "pos": 8,
+                                    "end": 18,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 79,
+                                    "escapedText": "Component"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "moduleSpecifier": {
+                    "pos": 25,
+                    "end": 41,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 10,
+                    "text": "@angular/core",
+                    "hasExtendedUnicodeEscape": false
+                }
+            },
+            {
+                "pos": 42,
+                "end": 70,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 269,
+                "importClause": {
+                    "pos": 50,
+                    "end": 57,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 270,
+                    "isTypeOnly": false,
+                    "namedBindings": {
+                        "pos": 50,
+                        "end": 57,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 272,
+                        "elements": [
+                            {
+                                "pos": 52,
+                                "end": 55,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 273,
+                                "isTypeOnly": false,
+                                "name": {
+                                    "pos": 52,
+                                    "end": 55,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 79,
+                                    "originalKeywordKind": 162,
+                                    "escapedText": "of"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "moduleSpecifier": {
+                    "pos": 62,
+                    "end": 69,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 10,
+                    "text": "rxjs",
+                    "hasExtendedUnicodeEscape": false
+                }
+            },
+            {
+                "pos": 70,
+                "end": 106,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 269,
+                "importClause": {
+                    "pos": 78,
+                    "end": 93,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 270,
+                    "isTypeOnly": false,
+                    "namedBindings": {
+                        "pos": 78,
+                        "end": 93,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 272,
+                        "elements": [
+                            {
+                                "pos": 80,
+                                "end": 91,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 273,
+                                "isTypeOnly": false,
+                                "name": {
+                                    "pos": 80,
+                                    "end": 91,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 79,
+                                    "escapedText": "Observable"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "moduleSpecifier": {
+                    "pos": 98,
+                    "end": 105,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 10,
+                    "text": "rxjs",
+                    "hasExtendedUnicodeEscape": false
+                }
+            },
+            {
+                "pos": 106,
+                "end": 167,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 269,
+                "importClause": {
+                    "pos": 114,
+                    "end": 130,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 270,
+                    "isTypeOnly": false,
+                    "namedBindings": {
+                        "pos": 114,
+                        "end": 130,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 272,
+                        "elements": [
+                            {
+                                "pos": 116,
+                                "end": 128,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 273,
+                                "isTypeOnly": false,
+                                "name": {
+                                    "pos": 116,
+                                    "end": 128,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 79,
+                                    "escapedText": "GalleryMock"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "moduleSpecifier": {
+                    "pos": 135,
+                    "end": 166,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 10,
+                    "text": "src/app/mockups/gallery.mock",
+                    "hasExtendedUnicodeEscape": false
+                }
+            },
+            {
+                "pos": 167,
+                "end": 251,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 269,
+                "importClause": {
+                    "pos": 175,
+                    "end": 211,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 270,
+                    "isTypeOnly": false,
+                    "namedBindings": {
+                        "pos": 175,
+                        "end": 211,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 272,
+                        "elements": [
+                            {
+                                "pos": 177,
+                                "end": 194,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 273,
+                                "isTypeOnly": false,
+                                "name": {
+                                    "pos": 177,
+                                    "end": 194,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 79,
+                                    "escapedText": "TemplateCategory"
+                                }
+                            },
+                            {
+                                "pos": 195,
+                                "end": 209,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 273,
+                                "isTypeOnly": false,
+                                "name": {
+                                    "pos": 195,
+                                    "end": 209,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 79,
+                                    "escapedText": "TemplateImage"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "moduleSpecifier": {
+                    "pos": 216,
+                    "end": 250,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 10,
+                    "text": "src/app/models/defaultTemplates",
+                    "hasExtendedUnicodeEscape": false
+                }
+            },
+            {
+                "pos": 251,
+                "end": 348,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 269,
+                "importClause": {
+                    "pos": 259,
+                    "end": 284,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 270,
+                    "isTypeOnly": false,
+                    "namedBindings": {
+                        "pos": 259,
+                        "end": 284,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 272,
+                        "elements": [
+                            {
+                                "pos": 261,
+                                "end": 282,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 273,
+                                "isTypeOnly": false,
+                                "name": {
+                                    "pos": 261,
+                                    "end": 282,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 79,
+                                    "escapedText": "PuzzleManagerService"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "moduleSpecifier": {
+                    "pos": 289,
+                    "end": 347,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 10,
+                    "text": "src/app/services/puzzleGenerator/puzzle-manager.service",
+                    "hasExtendedUnicodeEscape": false
+                }
+            },
+            {
+                "pos": 348,
+                "end": 406,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 269,
+                "importClause": {
+                    "pos": 356,
+                    "end": 371,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 270,
+                    "isTypeOnly": false,
+                    "namedBindings": {
+                        "pos": 356,
+                        "end": 371,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 272,
+                        "elements": [
+                            {
+                                "pos": 358,
+                                "end": 369,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 273,
+                                "isTypeOnly": false,
+                                "name": {
+                                    "pos": 358,
+                                    "end": 369,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 79,
+                                    "escapedText": "wholeEntity"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "moduleSpecifier": {
+                    "pos": 376,
+                    "end": 405,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 10,
+                    "text": "src/lightweightAnnotations",
+                    "hasExtendedUnicodeEscape": false
+                }
+            },
+            {
+                "pos": 406,
+                "end": 895,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 33563777,
+                "kind": 260,
+                "name": {
+                    "pos": 594,
+                    "end": 611,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 79,
+                    "escapedText": "GalleryComponent"
+                },
+                "modifiers": [
+{
+                        "pos": 541,
+                        "end": 580,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 33562625,
+                        "kind": 167,
+                        "expression": {
+                            "pos": 544,
+                            "end": 580,
+                            "flags": 16384,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 210,
+                            "expression": {
+                                "pos": 544,
+                                "end": 554,
+                                "flags": 16384,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "wholeEntity"
+                            },
+                            "arguments": [
+                                {
+                                    "pos": 555,
+                                    "end": 579,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 207,
+                                    "properties": [
+                                        {
+                                            "pos": 556,
+                                            "end": 578,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "kind": 299,
+                                            "name": {
+                                                "pos": 556,
+                                                "end": 570,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 0,
+                                                "kind": 10,
+                                                "text": "imageGallery",
+                                                "hasExtendedUnicodeEscape": false
+                                            },
+                                            "initializer": {
+                                                "pos": 571,
+                                                "end": 578,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 0,
+                                                "kind": 10,
+                                                "text": "true",
+                                                "hasExtendedUnicodeEscape": false
+                                            }
+                                        }
+                                    ],
+                                    "multiLine": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "pos": 406,
+                        "end": 541,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 33562625,
+                        "kind": 167,
+                        "expression": {
+                            "pos": 411,
+                            "end": 541,
+                            "flags": 16384,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 210,
+                            "expression": {
+                                "pos": 411,
+                                "end": 420,
+                                "flags": 16384,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "Component"
+                            },
+                            "arguments": [
+                                {
+                                    "pos": 421,
+                                    "end": 540,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 207,
+                                    "properties": [
+                                        {
+                                            "pos": 422,
+                                            "end": 449,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "kind": 299,
+                                            "name": {
+                                                "pos": 422,
+                                                "end": 434,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 0,
+                                                "kind": 79,
+                                                "escapedText": "selector"
+                                            },
+                                            "initializer": {
+                                                "pos": 435,
+                                                "end": 449,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 0,
+                                                "kind": 10,
+                                                "text": "app-gallery",
+                                                "hasExtendedUnicodeEscape": false
+                                            }
+                                        },
+                                        {
+                                            "pos": 450,
+                                            "end": 493,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "kind": 299,
+                                            "name": {
+                                                "pos": 450,
+                                                "end": 465,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 0,
+                                                "kind": 79,
+                                                "escapedText": "templateUrl"
+                                            },
+                                            "initializer": {
+                                                "pos": 466,
+                                                "end": 493,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 0,
+                                                "kind": 10,
+                                                "text": "./gallery.component.html",
+                                                "hasExtendedUnicodeEscape": false
+                                            }
+                                        },
+                                        {
+                                            "pos": 494,
+                                            "end": 537,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "kind": 299,
+                                            "name": {
+                                                "pos": 494,
+                                                "end": 507,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 0,
+                                                "kind": 79,
+                                                "escapedText": "styleUrls"
+                                            },
+                                            "initializer": {
+                                                "pos": 508,
+                                                "end": 537,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 0,
+                                                "kind": 206,
+                                                "elements": [
+                                                    {
+                                                        "pos": 510,
+                                                        "end": 536,
+                                                        "flags": 0,
+                                                        "modifierFlagsCache": 0,
+                                                        "transformFlags": 0,
+                                                        "kind": 10,
+                                                        "text": "./gallery.component.scss",
+                                                        "hasExtendedUnicodeEscape": false
+                                                    }
+                                                ],
+                                                "multiLine": false
+                                            }
+                                        }
+                                    ],
+                                    "multiLine": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "pos": 541,
+                        "end": 580,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 33562625,
+                        "kind": 167,
+                        "expression": {
+                            "pos": 544,
+                            "end": 580,
+                            "flags": 16384,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 210,
+                            "expression": {
+                                "pos": 544,
+                                "end": 554,
+                                "flags": 16384,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "wholeEntity"
+                            },
+                            "arguments": [
+                                {
+                                    "pos": 555,
+                                    "end": 579,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 207,
+                                    "properties": [
+                                        {
+                                            "pos": 556,
+                                            "end": 578,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "kind": 299,
+                                            "name": {
+                                                "pos": 556,
+                                                "end": 570,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 0,
+                                                "kind": 10,
+                                                "text": "imageGallery",
+                                                "hasExtendedUnicodeEscape": false
+                                            },
+                                            "initializer": {
+                                                "pos": 571,
+                                                "end": 578,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 0,
+                                                "kind": 10,
+                                                "text": "true",
+                                                "hasExtendedUnicodeEscape": false
+                                            }
+                                        }
+                                    ],
+                                    "multiLine": false
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "pos": 580,
+                        "end": 588,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "kind": 93
+                    }
+                ],
+                "members": [
+                    {
+                        "pos": 613,
+                        "end": 686,
+                        "flags": 32768,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 9217,
+                        "kind": 173,
+                        "parameters": [
+                            {
+                                "pos": 631,
+                                "end": 681,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 8193,
+                                "kind": 166,
+                                "name": {
+                                    "pos": 638,
+                                    "end": 659,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 79,
+                                    "escapedText": "puzzleManagerService"
+                                },
+                                "modifiers": [
+                                    {
+                                        "pos": 631,
+                                        "end": 638,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 1,
+                                        "kind": 121
+                                    }
+                                ],
+                                "type": {
+                                    "pos": 660,
+                                    "end": 681,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 180,
+                                    "typeName": {
+                                        "pos": 660,
+                                        "end": 681,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 79,
+                                        "escapedText": "PuzzleManagerService"
+                                    }
+                                }
+                            }
+                        ],
+                        "body": {
+                            "pos": 682,
+                            "end": 686,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 238,
+                            "statements": [],
+                            "multiLine": false
+                        }
+                    },
+                    {
+                        "pos": 686,
+                        "end": 779,
+                        "flags": 32768,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 4195457,
+                        "kind": 171,
+                        "name": {
+                            "pos": 698,
+                            "end": 709,
+                            "flags": 32768,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 79,
+                            "escapedText": "getGallery"
+                        },
+                        "modifiers": [
+                            {
+                                "pos": 686,
+                                "end": 698,
+                                "flags": 32768,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 1,
+                                "kind": 123
+                            }
+                        ],
+                        "parameters": [],
+                        "type": {
+                            "pos": 712,
+                            "end": 743,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 1,
+                            "kind": 180,
+                            "typeName": {
+                                "pos": 712,
+                                "end": 723,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "Observable"
+                            },
+                            "typeArguments": [
+                                {
+                                    "pos": 724,
+                                    "end": 742,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 185,
+                                    "elementType": {
+                                        "pos": 724,
+                                        "end": 740,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 1,
+                                        "kind": 180,
+                                        "typeName": {
+                                            "pos": 724,
+                                            "end": 740,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "kind": 79,
+                                            "escapedText": "TemplateCategory"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "body": {
+                            "pos": 743,
+                            "end": 779,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 4194432,
+                            "kind": 238,
+                            "statements": [
+                                {
+                                    "pos": 745,
+                                    "end": 774,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 4194432,
+                                    "kind": 250,
+                                    "expression": {
+                                        "pos": 757,
+                                        "end": 773,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 210,
+                                        "expression": {
+                                            "pos": 757,
+                                            "end": 760,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 0,
+                                            "kind": 79,
+                                            "originalKeywordKind": 162,
+                                            "escapedText": "of"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "pos": 761,
+                                                "end": 772,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 0,
+                                                "kind": 79,
+                                                "escapedText": "GalleryMock"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "multiLine": true
+                        }
+                    },
+                    {
+                        "pos": 779,
+                        "end": 892,
+                        "flags": 32768,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 17409,
+                        "kind": 171,
+                        "name": {
+                            "pos": 791,
+                            "end": 804,
+                            "flags": 32768,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 79,
+                            "escapedText": "startNewGame"
+                        },
+                        "modifiers": [
+                            {
+                                "pos": 779,
+                                "end": 791,
+                                "flags": 32768,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 1,
+                                "kind": 123
+                            }
+                        ],
+                        "parameters": [
+                            {
+                                "pos": 805,
+                                "end": 825,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 1,
+                                "kind": 166,
+                                "name": {
+                                    "pos": 805,
+                                    "end": 810,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 79,
+                                    "escapedText": "image"
+                                },
+                                "type": {
+                                    "pos": 811,
+                                    "end": 825,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 180,
+                                    "typeName": {
+                                        "pos": 811,
+                                        "end": 825,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 79,
+                                        "escapedText": "TemplateImage"
+                                    }
+                                }
+                            }
+                        ],
+                        "type": {
+                            "pos": 827,
+                            "end": 832,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 1,
+                            "kind": 114
+                        },
+                        "body": {
+                            "pos": 832,
+                            "end": 892,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 16384,
+                            "kind": 238,
+                            "statements": [
+                                {
+                                    "pos": 834,
+                                    "end": 887,
+                                    "flags": 0,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 16384,
+                                    "kind": 241,
+                                    "expression": {
+                                        "pos": 834,
+                                        "end": 886,
+                                        "flags": 0,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 16384,
+                                        "kind": 210,
+                                        "expression": {
+                                            "pos": 834,
+                                            "end": 875,
+                                            "flags": 0,
+                                            "modifierFlagsCache": 0,
+                                            "transformFlags": 16384,
+                                            "kind": 208,
+                                            "expression": {
+                                                "pos": 834,
+                                                "end": 865,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 16384,
+                                                "kind": 208,
+                                                "expression": {
+                                                    "pos": 834,
+                                                    "end": 844,
+                                                    "flags": 0,
+                                                    "modifierFlagsCache": 0,
+                                                    "transformFlags": 16384,
+                                                    "kind": 108
+                                                },
+                                                "name": {
+                                                    "pos": 845,
+                                                    "end": 865,
+                                                    "flags": 0,
+                                                    "modifierFlagsCache": 0,
+                                                    "transformFlags": 0,
+                                                    "kind": 79,
+                                                    "escapedText": "puzzleManagerService"
+                                                }
+                                            },
+                                            "name": {
+                                                "pos": 866,
+                                                "end": 875,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 0,
+                                                "kind": 79,
+                                                "escapedText": "startGame"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "pos": 876,
+                                                "end": 885,
+                                                "flags": 0,
+                                                "modifierFlagsCache": 0,
+                                                "transformFlags": 0,
+                                                "kind": 208,
+                                                "expression": {
+                                                    "pos": 876,
+                                                    "end": 881,
+                                                    "flags": 0,
+                                                    "modifierFlagsCache": 0,
+                                                    "transformFlags": 0,
+                                                    "kind": 79,
+                                                    "escapedText": "image"
+                                                },
+                                                "name": {
+                                                    "pos": 882,
+                                                    "end": 885,
+                                                    "flags": 0,
+                                                    "modifierFlagsCache": 0,
+                                                    "transformFlags": 0,
+                                                    "kind": 79,
+                                                    "escapedText": "src"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "multiLine": true
+                        }
+                    }
+                ]
+            }
+        ],
+        "endOfFileToken": {
+            "pos": 895,
+            "end": 897,
+            "flags": 0,
+            "modifierFlagsCache": 0,
+            "transformFlags": 0,
+            "kind": 1
+        },
+        "fileName": "x.ts",
+        "text": "import { Component } from '@angular/core';\r\nimport { of } from 'rxjs';\r\nimport { Observable } from 'rxjs';\r\nimport { GalleryMock } from 'src/app/mockups/gallery.mock';\r\nimport { TemplateCategory, TemplateImage } from 'src/app/models/defaultTemplates';\r\nimport { PuzzleManagerService } from 'src/app/services/puzzleGenerator/puzzle-manager.service';\r\nimport { wholeClass } from 'src/lightweightAnnotations';\r\n\r\n@Component({\r\n  selector: 'app-gallery',\r\n  templateUrl: './gallery.component.html',\r\n  styleUrls: ['./gallery.component.scss']\r\n})\r\n@wholeClass({\"imageGallery\": \"true\"})\r\nexport class GalleryComponent {\r\n\r\n  constructor(private puzzleManagerService: PuzzleManagerService) { }\r\n\r\n  public getGallery(): Observable<TemplateCategory[]> {\r\n    return of(GalleryMock);\r\n  }\r\n\r\n  public startNewGame(image: TemplateImage): void {\r\n    this.puzzleManagerService.startGame(image.src);\r\n  }\r\n}\r\n",
+        "languageVersion": 99,
+        "languageVariant": 0,
+        "scriptKind": 3,
+        "isDeclarationFile": false,
+        "hasNoDefaultLib": false,
+        "bindDiagnostics": [],
+        "externalModuleIndicator": {
+            "pos": 0,
+            "end": 42,
+            "flags": 0,
+            "modifierFlagsCache": 0,
+            "transformFlags": 0,
+            "kind": 269,
+            "importClause": {
+                "pos": 6,
+                "end": 20,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 270,
+                "isTypeOnly": false,
+                "namedBindings": {
+                    "pos": 6,
+                    "end": 20,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "kind": 272,
+                    "elements": [
+                        {
+                            "pos": 8,
+                            "end": 18,
+                            "flags": 0,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 273,
+                            "isTypeOnly": false,
+                            "name": {
+                                "pos": 8,
+                                "end": 18,
+                                "flags": 0,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "Component"
+                            }
+                        }
+                    ]
+                }
+            },
+            "moduleSpecifier": {
+                "pos": 25,
+                "end": 41,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "kind": 10,
+                "text": "@angular/core",
+                "hasExtendedUnicodeEscape": false
+            }
+        },
+        "pragmas": {},
+        "referencedFiles": [],
+        "typeReferenceDirectives": [],
+        "libReferenceDirectives": [],
+        "amdDependencies": [],
+        "nodeCount": 110,
+        "identifierCount": 29,
+        "identifiers": {},
+        "parseDiagnostics": []
+    }
+}

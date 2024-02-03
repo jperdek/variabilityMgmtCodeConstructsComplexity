@@ -1,0 +1,26 @@
+<div class="zoom-management-part">
+    <h1 class="main-heading">Zoom management</h1>
+
+
+
+    <div class="zoom-buttons">
+        <button mat-icon-button aria-label="Zoom in button"
+            class="zoom-button zoom-button-left" (click)="applyZoomIn()">
+            <img class="zoom-button-image" src="assets/icons/zoom/zoom-in-yellow.svg" alt="preview"/>
+        </button>
+        <button mat-icon-button aria-label="Zoom out button"
+            class="zoom-button zoom-button-right" (click)="applyZoomOut()">
+            <img class="zoom-button-image" src="assets/icons/zoom/zoom-out-yellow.svg" alt="preview"/>
+        </button>
+    </div>
+
+    <div class="vertical-spacer"></div>
+    <mat-slide-toggle (change)="toggleZoom($event)" allowIfFeatures='{"zoom": "true"}'>Show / hide zoom</mat-slide-toggle>
+
+    <div class="reset-button-block">
+        <button mat-icon-button aria-label="Reset zoom button"
+            class="zoom-button zoom-button-left" (click)="applyZoomReset()">
+            <img class="zoom-button-image" src="assets/icons/zoom/zoom-reset.svg" alt="preview"/>
+        </button>
+    </div>
+</div>

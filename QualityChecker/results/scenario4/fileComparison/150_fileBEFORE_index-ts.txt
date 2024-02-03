@@ -1,0 +1,15 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/store/index-ts
+import { ActionReducerMap } from "@ngrx/store";
+import * as puzzleState from "./puzzles/puzzles.reducer";
+import { DecoratorTypesService } from "../featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+export interface PuzzleAppState {
+    [puzzleState.puzzlesFeatureKey]: puzzleState.PuzzleToSelectState;
+}
+export const reducers: ActionReducerMap<PuzzleAppState> = {
+    [puzzleState.puzzlesFeatureKey]: puzzleState.reducer
+};
+var EXPRESSION_START188 = {};
+class DecoratorFileCopy {
+}
+var EXPRESSION_END188 = { "EXPRESSION_END": "---------------------------" };
+export const puzzleListForSelect = (state: PuzzleAppState): puzzleState.PuzzleToSelectState => state[puzzleState.puzzlesFeatureKey];

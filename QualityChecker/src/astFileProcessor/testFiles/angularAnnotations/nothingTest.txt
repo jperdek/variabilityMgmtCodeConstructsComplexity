@@ -1,0 +1,10 @@
+let puzzleQuatro2 = "VERY DIFFERENT";
+
+@DecoratorTypesService.wholeBlockFile("THIS ONE")
+class Abcd {}
+
+export default RoutingModelDataAll;
+// @ts-ignore
+@DecoratorTypesService.skipLineVariableDeclaration({"imageGallery": "false"}, "[NOTHING]") var newA;
+//
+

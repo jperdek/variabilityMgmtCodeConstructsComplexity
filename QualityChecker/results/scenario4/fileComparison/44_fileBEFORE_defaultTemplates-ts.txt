@@ -1,0 +1,15 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/models/defaultTemplates-ts
+import { DecoratorTypesService } from "../featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+export interface TemplateCategory {
+    name: string;
+    images: TemplateImage[];
+}
+var EXPRESSION_START63 = {};
+class DecoratorFileCopy {
+}
+var EXPRESSION_END63 = { "EXPRESSION_END": "---------------------------" };
+export interface TemplateImage {
+    title: string;
+    quality: string;
+    src: string;
+}

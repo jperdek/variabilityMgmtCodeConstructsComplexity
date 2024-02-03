@@ -1,0 +1,7 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/models/point-ts
+class DecoratorFileCopy {
+}
+export interface Point {
+    x: number;
+    y: number;
+}

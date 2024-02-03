@@ -1,0 +1,10 @@
+@import "../../../styles/text-settings.scss";
+@import "../../../styles/layout-settings.scss";
+
+.puzzle-image-uploader-block {
+  @include side-puzzle-block;
+
+  .main-heading {
+    @include main-heading;
+  }
+}

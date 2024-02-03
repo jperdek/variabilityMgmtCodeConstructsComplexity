@@ -1,0 +1,30 @@
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { DecoratorTypesService } from 'src/app/featureManagement/decoratorsVariationPointManagement/decorator-types.service';
+import { PuzzleManagerService } from 'src/app/services/puzzleGenerator/puzzle-manager.service';
+
+
+@Component({
+  selector: 'app-puzzle-board',
+  templateUrl: './puzzle-board.component.html',
+  styleUrls: ['./puzzle-board.component.scss'],
+})
+@DecoratorTypesService.wholeBlockFile({})
+export class PuzzleBoardComponent implements AfterViewInit {
+
+  constructor(private puzzleManager: PuzzleManagerService) { }
+
+  @ViewChild('puzzleBoard') canvas?: ElementRef;
+
+  public ngAfterViewInit(): void {
+    this.initialize();
+    this.getCanvasElement();
+  }
+
+  public initialize(): void {
+    this.puzzleManager.initialize();
+  }
+
+  public getCanvasElement(): HTMLElement | null | undefined {
+    return document.getElementById("puzzleBoardWrapper");
+  }
+}

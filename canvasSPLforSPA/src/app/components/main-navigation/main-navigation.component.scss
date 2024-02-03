@@ -1,0 +1,74 @@
+@import "../../styles/text-settings.scss";
+
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-drawer {
+  width: 300px;
+}
+
+.mat-drawer-container {
+  position: static;
+}
+
+.menu-component-item {
+  width: auto;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.sidenav-block {
+  height: 0 !important;
+  min-height: 0 !important;
+}
+
+.menu-sidenav-container.mat-drawer-container {
+  position: static;
+  height: 100vh;
+}
+
+.puzzle-design-panel {
+  background-image: url("/assets/designImages/puzzlePanel2.svg");
+}
+
+.main-menu-navlist {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+
+  .vertical-spacer {
+    flex: 1;
+  }
+
+  .zoom-toggles {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 600px) {
+  .zoom-toggles {
+    display: none;
+  }
+}
+
+.menu-text {
+  @include text-menu-heading;
+}
+
+.main-menu-text {
+  @include main-menu-title-heading;
+  margin-left: 32px;
+}
+
+@media (max-width: 1056px) {
+  .main-menu-text {
+    width: 100%;
+  }
+}
+
+@media (min-width: 960px) {
+  .main-menu-text {
+    width: auto;
+  }
+}

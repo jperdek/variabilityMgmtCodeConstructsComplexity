@@ -1,0 +1,19 @@
+Name;Type;?k Cost Ck / ?j Cost Cj;?k ???????? C;Cost C (in LOC);Is common;Is variability point;Whole SPL weight
+puzzle-controller-manager2;service;0,1824;1528,00;266,00;FALSE;TRUE;8378,25
+puzzle-controller-manager;service;0,1817;1522,00;260,00;FALSE;TRUE;8378,25
+game-configuration;service;0,1645;1378,00;80,00;FALSE;TRUE;8378,25
+puzzle-generator-quadro;service;0,1578;1322,00;666,00;FALSE;TRUE;8378,25
+puzzle-generator-quadro2;service;0,1576;1320,00;666,00;FALSE;TRUE;8378,25
+draw-borders;service;0,1363;1142,00;568,00;FALSE;TRUE;8378,25
+draw-borders2;service;0,1361;1140,00;566,00;FALSE;TRUE;8378,25
+zoom-management;component;0,0941;788,50;82,75;FALSE;TRUE;8378,25
+routing;mock;0,0613;514,00;116,00;FALSE;TRUE;8378,25
+gallery;component;0,0495;414,75;88,75;FALSE;TRUE;8378,25
+set-zoom-position;component;0,0439;367,75;41,75;FALSE;TRUE;8378,25
+zoom-management-bottom-sheet;component;0,0204;171,25;6,75;FALSE;TRUE;8378,25
+gallery-bottom-sheet;component;0,0114;95,50;6,75;FALSE;TRUE;8378,25
+insert-template-image-bottom-sheet;component;0,0084;70,00;7,25;FALSE;TRUE;8378,25
+shuffle-puzzles;service;0,0076;64,00;64,00;FALSE;TRUE;8378,25
+insert-template-image;component;0,0075;62,75;12,50;FALSE;TRUE;8378,25
+zoom-block;component;0,0059;49,75;13,50;FALSE;TRUE;8378,25
+set-zoom;component;0,0048;40,00;40,00;FALSE;TRUE;8378,25

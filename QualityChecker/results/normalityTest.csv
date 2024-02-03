@@ -1,0 +1,86 @@
+Form number;Complexity name;Statistics;p-value;p-value > 0.05;;;;;Form number;Complexity name;Statistics W;p-value;p-value > 0.05
+1;Class.Maintainability;0.8747;2.6259E-06;FALSE;;;;;1;Class Maintainability;0.8747;2.6259E-06;FALSE
+2;Class.Maintainability;0.8754;2.7708E-06;FALSE;;;;;2;Class Maintainability;0.8754;2.7708E-06;FALSE
+3;Class.Maintainability;0.8754;2.7645E-06;FALSE;;;;;3;Class Maintainability;0.8754;2.7645E-06;FALSE
+4;Class.Maintainability;0.8763;2.9801E-06;FALSE;;;;;4;Class Maintainability;0.8763;2.9801E-06;FALSE
+5;Class.Maintainability;0.8745;2.5767E-06;FALSE;;;;;5;Class Maintainability;0.8745;2.5767E-06;FALSE
+1;Class.number.methods;0.8215;4.9815E-08;FALSE;;;;;1;Class number methods;0.8215;4.9815E-08;FALSE
+2;Class.number.methods;0.8215;4.9815E-08;FALSE;;;;;2;Class number methods;0.8215;4.9815E-08;FALSE
+3;Class.number.methods;0.8215;4.9815E-08;FALSE;;;;;3;Class number methods;0.8215;4.9815E-08;FALSE
+4;Class.number.methods;0.8215;4.9815E-08;FALSE;;;;;4;Class number methods;0.8215;4.9815E-08;FALSE
+5;Class.number.methods;0.8215;4.9815E-08;FALSE;;;;;5;Class number methods;0.8215;4.9815E-08;FALSE
+1;Cycl..Density;0.8814;4.5946E-06;FALSE;;;;;1;Cycl. Density;0.8814;4.5946E-06;FALSE
+2;Cycl..Density;0.8808;4.3564E-06;FALSE;;;;;2;Cycl. Density;0.8808;4.3564E-06;FALSE
+3;Cycl..Density;0.8839;5.7048E-06;FALSE;;;;;3;Cycl. Density;0.8839;5.7048E-06;FALSE
+4;Cycl..Density;0.8768;3.1165E-06;FALSE;;;;;4;Cycl. Density;0.8768;3.1165E-06;FALSE
+5;Cycl..Density;0.8813;4.5506E-06;FALSE;;;;;5;Cycl. Density;0.8813;4.5506E-06;FALSE
+1;Cycl..Number;0.7540;8.3624E-10;FALSE;;;;;1;Cycl. Number;0.7540;8.3624E-10;FALSE
+2;Cycl..Number;0.7540;8.3624E-10;FALSE;;;;;2;Cycl. Number;0.7540;8.3624E-10;FALSE
+3;Cycl..Number;0.7540;8.3624E-10;FALSE;;;;;3;Cycl. Number;0.7540;8.3624E-10;FALSE
+4;Cycl..Number;0.7540;8.3624E-10;FALSE;;;;;4;Cycl. Number;0.7540;8.3624E-10;FALSE
+5;Cycl..Number;0.7540;8.3624E-10;FALSE;;;;;5;Cycl. Number;0.7540;8.3624E-10;FALSE
+1;Halstead.Bugs;0.6082;9.4848E-13;FALSE;;;;;1;Halstead Bugs;0.6082;9.4848E-13;FALSE
+2;Halstead.Bugs;0.6058;8.5940E-13;FALSE;;;;;2;Halstead Bugs;0.6058;8.5940E-13;FALSE
+3;Halstead.Bugs;0.6070;9.0388E-13;FALSE;;;;;3;Halstead Bugs;0.6070;9.0388E-13;FALSE
+4;Halstead.Bugs;0.5980;6.3182E-13;FALSE;;;;;4;Halstead Bugs;0.5980;6.3182E-13;FALSE
+5;Halstead.Bugs;0.6087;9.6778E-13;FALSE;;;;;5;Halstead Bugs;0.6087;9.6778E-13;FALSE
+1;Halstead.Difficulty;0.6302;2.3234E-12;FALSE;;;;;1;Halstead Difficulty;0.6302;2.3234E-12;FALSE
+2;Halstead.Difficulty;0.6330;2.6107E-12;FALSE;;;;;2;Halstead Difficulty;0.6330;2.6107E-12;FALSE
+3;Halstead.Difficulty;0.6475;4.8319E-12;FALSE;;;;;3;Halstead Difficulty;0.6475;4.8319E-12;FALSE
+4;Halstead.Difficulty;0.6477;4.8812E-12;FALSE;;;;;4;Halstead Difficulty;0.6477;4.8812E-12;FALSE
+5;Halstead.Difficulty;0.6303;2.3370E-12;FALSE;;;;;5;Halstead Difficulty;0.6303;2.3370E-12;FALSE
+1;Halstead.Effort;0.3859;5.1775E-16;FALSE;;;;;1;Halstead Effort;0.3859;5.1775E-16;FALSE
+2;Halstead.Effort;0.3839;4.8949E-16;FALSE;;;;;2;Halstead Effort;0.3839;4.8949E-16;FALSE
+3;Halstead.Effort;0.3848;5.0211E-16;FALSE;;;;;3;Halstead Effort;0.3848;5.0211E-16;FALSE
+4;Halstead.Effort;0.3811;4.5189E-16;FALSE;;;;;4;Halstead Effort;0.3811;4.5189E-16;FALSE
+5;Halstead.Effort;0.3860;5.2023E-16;FALSE;;;;;5;Halstead Effort;0.3860;5.2023E-16;FALSE
+1;Halstead.Identifiers.Distinct.Operands;0.8351;1.2772E-07;FALSE;;;;;1;Halstead Identifiers Distinct Operands;0.8351;1.2772E-07;FALSE
+2;Halstead.Identifiers.Distinct.Operands;0.8361;1.3673E-07;FALSE;;;;;2;Halstead Identifiers Distinct Operands;0.8361;1.3673E-07;FALSE
+3;Halstead.Identifiers.Distinct.Operands;0.8285;8.0313E-08;FALSE;;;;;3;Halstead Identifiers Distinct Operands;0.8285;8.0313E-08;FALSE
+4;Halstead.Identifiers.Distinct.Operands;0.8335;1.1396E-07;FALSE;;;;;4;Halstead Identifiers Distinct Operands;0.8335;1.1396E-07;FALSE
+5;Halstead.Identifiers.Distinct.Operands;0.8350;1.2662E-07;FALSE;;;;;5;Halstead Identifiers Distinct Operands;0.8350;1.2662E-07;FALSE
+1;Halstead.Identifiers.Distinct.Operators;0.8826;5.1122E-06;FALSE;;;;;1;Halstead Identifiers Distinct Operators;0.8826;5.1122E-06;FALSE
+2;Halstead.Identifiers.Distinct.Operators;0.8966;1.7727E-05;FALSE;;;;;2;Halstead Identifiers Distinct Operators;0.8966;1.7727E-05;FALSE
+3;Halstead.Identifiers.Distinct.Operators;0.9250;2.9545E-04;FALSE;;;;;3;Halstead Identifiers Distinct Operators;0.9250;2.9545E-04;FALSE
+4;Halstead.Identifiers.Distinct.Operators;0.9245;2.8168E-04;FALSE;;;;;4;Halstead Identifiers Distinct Operators;0.9245;2.8168E-04;FALSE
+5;Halstead.Identifiers.Distinct.Operators;0.8826;5.1122E-06;FALSE;;;;;5;Halstead Identifiers Distinct Operators;0.8826;5.1122E-06;FALSE
+1;Halstead.Identifiers.Total.Operands;0.6246;1.8399E-12;FALSE;;;;;1;Halstead Identifiers Total Operands;0.6246;1.8399E-12;FALSE
+2;Halstead.Identifiers.Total.Operands;0.6224;1.6847E-12;FALSE;;;;;2;Halstead Identifiers Total Operands;0.6224;1.6847E-12;FALSE
+3;Halstead.Identifiers.Total.Operands;0.6261;1.9638E-12;FALSE;;;;;3;Halstead Identifiers Total Operands;0.6261;1.9638E-12;FALSE
+4;Halstead.Identifiers.Total.Operands;0.6186;1.4381E-12;FALSE;;;;;4;Halstead Identifiers Total Operands;0.6186;1.4381E-12;FALSE
+5;Halstead.Identifiers.Total.Operands;0.6250;1.8761E-12;FALSE;;;;;5;Halstead Identifiers Total Operands;0.6250;1.8761E-12;FALSE
+1;Halstead.Identifiers.Total.Operators;0.6617;8.9769E-12;FALSE;;;;;1;Halstead Identifiers Total Operators;0.6617;8.9769E-12;FALSE
+2;Halstead.Identifiers.Total.Operators;0.6585;7.8113E-12;FALSE;;;;;2;Halstead Identifiers Total Operators;0.6585;7.8113E-12;FALSE
+3;Halstead.Identifiers.Total.Operators;0.6621;9.1435E-12;FALSE;;;;;3;Halstead Identifiers Total Operators;0.6621;9.1435E-12;FALSE
+4;Halstead.Identifiers.Total.Operators;0.6538;6.3349E-12;FALSE;;;;;4;Halstead Identifiers Total Operators;0.6538;6.3349E-12;FALSE
+5;Halstead.Identifiers.Total.Operators;0.6623;9.2302E-12;FALSE;;;;;5;Halstead Identifiers Total Operators;0.6623;9.2302E-12;FALSE
+1;Halstead.Length;0.6424;3.8863E-12;FALSE;;;;;1;Halstead Length;0.6424;3.8863E-12;FALSE
+2;Halstead.Length;0.6401;3.5191E-12;FALSE;;;;;2;Halstead Length;0.6401;3.5191E-12;FALSE
+3;Halstead.Length;0.6434;4.0449E-12;FALSE;;;;;3;Halstead Length;0.6434;4.0449E-12;FALSE
+4;Halstead.Length;0.6356;2.9085E-12;FALSE;;;;;4;Halstead Length;0.6356;2.9085E-12;FALSE
+5;Halstead.Length;0.6429;3.9598E-12;FALSE;;;;;5;Halstead Length;0.6429;3.9598E-12;FALSE
+1;Halstead.Time;0.3859;5.1775E-16;FALSE;;;;;1;Halstead Time;0.3859;5.1775E-16;FALSE
+2;Halstead.Time;0.3839;4.8949E-16;FALSE;;;;;2;Halstead Time;0.3839;4.8949E-16;FALSE
+3;Halstead.Time;0.3848;5.0211E-16;FALSE;;;;;3;Halstead Time;0.3848;5.0211E-16;FALSE
+4;Halstead.Time;0.3811;4.5189E-16;FALSE;;;;;4;Halstead Time;0.3811;4.5189E-16;FALSE
+5;Halstead.Time;0.3860;5.2023E-16;FALSE;;;;;5;Halstead Time;0.3860;5.2023E-16;FALSE
+1;Halstead.Vocabulary;0.8488;3.4422E-07;FALSE;;;;;1;Halstead Vocabulary;0.8488;3.4422E-07;FALSE
+2;Halstead.Vocabulary;0.8536;4.9182E-07;FALSE;;;;;2;Halstead Vocabulary;0.8536;4.9182E-07;FALSE
+3;Halstead.Vocabulary;0.8576;6.6742E-07;FALSE;;;;;3;Halstead Vocabulary;0.8576;6.6742E-07;FALSE
+4;Halstead.Vocabulary;0.8591;7.5347E-07;FALSE;;;;;4;Halstead Vocabulary;0.8591;7.5347E-07;FALSE
+5;Halstead.Vocabulary;0.8488;3.4327E-07;FALSE;;;;;5;Halstead Vocabulary;0.8488;3.4327E-07;FALSE
+1;LOC.Logical;0.7075;7.5486E-11;FALSE;;;;;1;LOC Logical;0.7075;7.5486E-11;FALSE
+2;LOC.Logical;0.7057;6.9080E-11;FALSE;;;;;2;LOC Logical;0.7057;6.9080E-11;FALSE
+3;LOC.Logical;0.7087;7.9907E-11;FALSE;;;;;3;LOC Logical;0.7087;7.9907E-11;FALSE
+4;LOC.Logical;0.6987;4.9271E-11;FALSE;;;;;4;LOC Logical;0.6987;4.9271E-11;FALSE
+5;LOC.Logical;0.7083;7.8528E-11;FALSE;;;;;5;LOC Logical;0.7083;7.8528E-11;FALSE
+1;LOC.Physical;0.7227;1.6071E-10;FALSE;;;;;1;LOC Physical;0.7227;1.6071E-10;FALSE
+2;LOC.Physical;0.7227;1.6071E-10;FALSE;;;;;2;LOC Physical;0.7227;1.6071E-10;FALSE
+3;LOC.Physical;0.7237;1.6914E-10;FALSE;;;;;3;LOC Physical;0.7237;1.6914E-10;FALSE
+4;LOC.Physical;0.7158;1.1367E-10;FALSE;;;;;4;LOC Physical;0.7158;1.1367E-10;FALSE
+5;LOC.Physical;0.7245;1.7659E-10;FALSE;;;;;5;LOC Physical;0.7245;1.7659E-10;FALSE
+1;Overall.file.decorastors;0.3162;7.4624E-17;FALSE;;;;;1;Overall file decorastors;0.3162;7.4624E-17;FALSE
+2;Overall.file.decorastors;0.3162;7.4624E-17;FALSE;;;;;2;Overall file decorastors;0.3162;7.4624E-17;FALSE
+3;Overall.file.decorastors;0.3162;7.4624E-17;FALSE;;;;;3;Overall file decorastors;0.3162;7.4624E-17;FALSE
+4;Overall.file.decorastors;0.3151;7.2523E-17;FALSE;;;;;4;Overall file decorastors;0.3151;7.2523E-17;FALSE
+5;Overall.file.decorastors;0.3162;7.4624E-17;FALSE;;;;;5;Overall file decorastors;0.3162;7.4624E-17;FALSE

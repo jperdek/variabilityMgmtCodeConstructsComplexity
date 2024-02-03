@@ -1,0 +1,7 @@
+let puzzleQuatro2 = "VERY DIFFERENT";
+
+@DecoratorTypesService.skipLineVariableDeclaration({"puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']"}, "[NOT=let puzzleQuatro = null;]")
+let puzzleQuatro = {"name": "jigsaw", "instance": new PuzzleGeneratorQuadroService(this.drawBordersService, this.store, this.shufflePuzzlesService)};
+
+@DecoratorTypesService.wholeBlockFile("THIS ONE")
+class Abcd {}

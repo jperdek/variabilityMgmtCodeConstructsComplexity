@@ -1,0 +1,19 @@
+Name;Type;Component partial value (from all SPL);Whole value with its subcomponents;Component valuability (in LOC);Is common;Is variability point;Whole SPL weight
+zoom-management-bottom-sheet;component;0,020439829319965387;171,25;6,75;false;true;8378,25
+puzzle-generator-quadro2;service;0,157550801181631;1320,0;666,0;false;true;8378,25
+set-zoom-position;component;0,043893414495867276;367,75;41,75;false;true;8378,25
+routing;mock;0,06134932712678662;514,0;116,0;false;true;8378,25
+game-configuration;service;0,16447348790021782;1378,0;80,0;false;true;8378,25
+insert-template-image;component;0,007489630889505565;62,75;12,5;false;true;8378,25
+puzzle-controller-manager2;service;0,18237698803449406;1528,0;266,0;false;true;8378,25
+gallery;component;0,04950317787127383;414,75;88,75;false;true;8378,25
+shuffle-puzzles;service;0,007638826723957867;64,0;64,0;false;true;8378,25
+zoom-block;component;0,005937994211201623;49,75;13,5;false;true;8378,25
+set-zoom;component;0,004774266702473667;40,0;40,0;false;true;8378,25
+gallery-bottom-sheet;component;0,011398561752155879;95,5;6,75;false;true;8378,25
+puzzle-generator-quadro;service;0,1577895145167547;1322,0;666,0;false;true;8378,25
+puzzle-controller-manager;service;0,18166084802912302;1522,0;260,0;false;true;8378,25
+draw-borders2;service;0,1360666010204995;1140,0;566,0;false;true;8378,25
+zoom-management;component;0,09411273237251216;788,5;82,75;false;true;8378,25
+draw-borders;service;0,13630531435562318;1142,0;568,0;false;true;8378,25
+insert-template-image-bottom-sheet;component;0,008354966729328917;70,0;7,25;false;true;8378,25

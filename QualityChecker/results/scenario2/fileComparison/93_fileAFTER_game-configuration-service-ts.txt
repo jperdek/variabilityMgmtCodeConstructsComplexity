@@ -1,0 +1,34 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/services/game-configuration-service-ts
+import { Injectable } from "@angular/core";
+import { Store } from "@ngrx/store";
+import { AlgorithmMap } from "../models/algorithmMap";
+import { PuzzleAppState } from "../store";
+import { DrawBordersService } from "./puzzleGenerator/puzzleRenderingAlgorithm/algorithm1/draw-borders.service";
+import { PuzzleGeneratorQuadroService } from "./puzzleGenerator/puzzleRenderingAlgorithm/algorithm1/puzzle-generator-quadro.service";
+import { ShufflePuzzlesService } from "./utils/shuffle-puzzles.service";
+@Injectable({
+    providedIn: "root"
+})
+export class GameConfigurationService {
+    availableAlgorithms: AlgorithmMap[] = [];
+    constructor(drawBordersService: DrawBordersService, store: Store<PuzzleAppState>, shufflePuzzlesService: ShufflePuzzlesService) {
+        let puzzleQuatro = { "name": "jigsaw", "instance": new PuzzleGeneratorQuadroService(this.drawBordersService, this.store, this.shufflePuzzlesService) };
+        let puzzleQuatroAlter23 = null;
+        if (puzzleQuatro != null)
+            this.availableAlgorithms.push(puzzleQuatro);
+        let puzzleQuatro2 = { "name": "jigsaw2", "instance": new PuzzleGeneratorQuadroService(this.drawBordersService, this.store, this.shufflePuzzlesService) };
+        let puzzleQuatro2Alter24 = null;
+        if (puzzleQuatro2 != null)
+            this.availableAlgorithms.push(puzzleQuatro2);
+        return this.applyToMe();
+    }
+    applyToMe(): GameConfigurationService {
+        return this;
+    }
+    getAlgorithms(): AlgorithmMap[] {
+        return this.availableAlgorithms;
+    }
+    setAlgorithms(algorithms: AlgorithmMap[]): void {
+        this.availableAlgorithms = algorithms;
+    }
+}

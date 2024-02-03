@@ -1,0 +1,12 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/featureManagement/decoratorsVariationPointManagement/decorator-types-service-spec-ts
+import { TestBed } from "@angular/core/testing";
+describe("DecoratorTypesService", () => {
+    let service: DecoratorTypesService;
+    beforeEach(() => {
+        TestBed.configureTestingModule({});
+        service = TestBed.inject(DecoratorTypesService);
+    });
+    it("should be created", () => {
+        expect(service).toBeTruthy();
+    });
+});

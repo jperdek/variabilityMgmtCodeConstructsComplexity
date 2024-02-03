@@ -1,0 +1,66 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/services/puzzleControllers/decoratorFabricMenuServices/top-left-fabric-menu-service-ts
+import { Injectable } from "@angular/core";
+import { fabric } from "fabric";
+@Injectable({
+    providedIn: "root"
+})
+export class TopLeftFabricMenuService {
+    static _decorated: boolean = true;
+    getDecorated(): boolean {
+        return TopLeftFabricMenuService._decorated;
+    }
+    setDecorated(decorated: boolean): void {
+        TopLeftFabricMenuService._decorated = decorated;
+    }
+    static createDecorator(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+        TopLeftFabricMenuService._decorated = false;
+        target.setDecorated = function (decorated: boolean) {
+            this.decorated = decorated;
+        };
+        target.isDecorated = function () { return this.decorated; };
+    }
+    static setDecorator(shouldApply: boolean) {
+        return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+            descriptor.value = function (...args: any[]) {
+                target.decorated = shouldApply;
+            };
+        };
+    }
+    static applyDecoratorPick(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+        const originalValue = descriptor.value;
+        descriptor.value = function (...args: any[]) {
+            //some setting can be overwritten if are applied before function call
+            const service = this as typeof target.type;
+            if (service.helpPuzzleService !== null) {
+                const result = originalValue.apply(this, args);
+                const service = this as typeof target.type;
+                fabric.Object.prototype.controls.topLeft = new fabric.Control(Object.assign(fabric.Object.prototype.controls.topLeft, { render: service.drawControllerIcon(TopLeftFabricMenuService.getIcon(), service.cornerSize)
+                }));
+                return result;
+            }
+        };
+    }
+    static applyDecorator(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+        descriptor.value = function (...args: any[]) {
+            //some setting can be overwritten if are applied before function call
+            const service = this as typeof target.type;
+            if (service.helpPuzzleService !== null) {
+                fabric.Object.prototype.controls.topLeft = new fabric.Control({
+                    x: -0.5,
+                    y: -0.5,
+                    offsetX: -16,
+                    offsetY: -16,
+                    cursorStyle: "pointer",
+                    mouseUpHandler: service.helpPuzzleService.helpForPuzzle(args[0]),
+                    render: service.drawControllerIcon(TopLeftFabricMenuService.getIcon(), service.cornerSize)
+                });
+            }
+        };
+    }
+    public static getIcon(): HTMLImageElement {
+        const icon = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgZmlsbD0iI0YwQzQxOSIgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIi8+PGNsaXBQYXRoIGlkPSJhIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIvPjwvY2xpcFBhdGg+PGcgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcGF0aD0idXJsKCNhKSI+PHBhdGggZmlsbD0iI0ZDRjA2MiIgZD0iTTcuNjE5IDIxLjY2M0w0OS45OTkgNTAgMjEuNjg5IDcuNTk0IDcuNjE5IDIxLjY2M3ptODQuNzc1LjAxOUw3OC4zMjkgNy42MDcgNTAgNTAgLjAwNSA0MC4wMzkgMCA1OS45NCA1MCA1MCA3LjYwNiA3OC4zMTlsMTQuMDY1IDE0LjA3NUw1MCA1MC4wMDFsLTkuOTU4IDUwLjAxIDE5Ljg5NS4wMDRMNTAgNTAuMDAxbDI4LjMxIDQyLjQwNiAxNC4wNzEtMTQuMDdMNTAgNTBsNDIuMzk0LTI4LjMxOHpNMTAwIDQwLjA2MUw1MCA1MGw0OS45OTYgOS45NjIuMDA0LTE5LjkwMXpNNDAuMDYzLS4wMTRMNTAgNDkuOTk5IDU5Ljk1OC0uMDEgNDAuMDYzLS4wMTR6Ii8+PHBhdGggZmlsbD0iI0ZDRjA2MiIgc3Ryb2tlPSIjRjI5QzFGIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTYwIDkzSDQwYzAtNy41NzUtMy40ODctMTcuNTY1LTcuOTktMjEuMzI0QTI4LjExNCAyOC4xMTQgMCAwIDEgMjIgNTAuMTI1QzIyIDM0LjU5MiAzNC41MzYgMjIgNTAgMjJzMjggMTIuNTkyIDI4IDI4LjEyNWMwIDguNjY3LTQuMTU2IDE2LjEzLTEwLjA0IDIxLjU3NkM2My4xOTEgNzYuNDcgNjAgODUuNDY2IDYwIDkzeiIvPjxwYXRoIGZpbGw9IiNGMjlDMUYiIGQ9Ik01MyA5NWExIDEgMCAwIDEtMS0xVjYxaC00djMzYTEgMSAwIDAgMS0xIDFoLTJhMSAxIDAgMCAxLTEtMVY2MWgtMi41Yy0zLjU4NCAwLTYuNS0yLjkxNi02LjUtNi41czIuOTE2LTYuNSA2LjUtNi41YTYuNDYgNi40NiAwIDAgMSA2LjQ0NiA1LjY4NEEuOTQ5Ljk0OSAwIDAgMSA0OCA1NHYzaDR2LTNjMC0uMTE1LjAyLS4yMjYuMDU2LS4zMjlBNi40NiA2LjQ2IDAgMCAxIDU4LjUgNDhjMy41ODQgMCA2LjUgMi45MTYgNi41IDYuNVM2Mi4wODQgNjEgNTguNSA2MUg1NnYzM2ExIDEgMCAwIDEtMSAxaC0yem01LjUtMzhjMS4zNzkgMCAyLjUtMS4xMjEgMi41LTIuNXMtMS4xMjEtMi41MDEtMi41LTIuNTAxYTIuNTA0IDIuNTA0IDAgMCAwLTIuNDU5IDIuMTQ0bC0uMDQxLjE3M1Y1N2gyLjV6bS0xNy01LjAwMWMtMS4zNzggMC0yLjUgMS4xMjItMi41IDIuNTAxczEuMTIyIDIuNSAyLjUgMi41SDQ0di0yLjY5MmwtLjA0LS4xNjVhMi41MDUgMi41MDUgMCAwIDAtMi40Ni0yLjE0NHoiLz48cGF0aCBmaWxsPSIjRTU3RTI1IiBkPSJNMzggOTFoMjR2OUgzOHYtOXptNi0yN2g0di0zaC00djN6bTgtM3YzaDR2LTNoLTR6Ii8+PC9nPjwvc3ZnPg==";
+        const img = new Image();
+        img.src = icon;
+        return img;
+    }
+}

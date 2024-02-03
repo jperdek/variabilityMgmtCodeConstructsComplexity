@@ -1,0 +1,23 @@
+@import "../styles/text-settings.scss";
+@import "../styles/layout-settings.scss";
+
+.game-config-content {
+  @include side-puzzle-block-no-scroll;
+
+  .main-heading {
+    @include main-heading;
+  }
+
+  .game-config-wrapper {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    @include to-bottom-content($height-from-top: 48px);
+
+    .game-config-image {
+
+    }
+  }
+}

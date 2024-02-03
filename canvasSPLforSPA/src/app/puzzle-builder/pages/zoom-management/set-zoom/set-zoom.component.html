@@ -1,0 +1,13 @@
+<div class="zoom-focus-block">
+  <mat-form-field appearance="outline" floatLabel="always" class="zoom-input-value-part">
+
+      <mat-label class="zoom-label">Zoom value</mat-label>
+      <input matInput class="zoom-value" type="number" placeholder="1.0" [(ngModel)]="zoomValue" (change)="zoomEmitter"
+      name="centerX">
+      <span matSuffix class="suffix-set-zoom-button">
+          <button mat-button class="zoom-change-button" (click)="setZoomFromDefaultToPoint();">
+              <img src="assets/icons/zoom/zoom-fit.svg" alt="fit value zooming button"/>
+          </button>
+      </span>
+  </mat-form-field>
+</div>

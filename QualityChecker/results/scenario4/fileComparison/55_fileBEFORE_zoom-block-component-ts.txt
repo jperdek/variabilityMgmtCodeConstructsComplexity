@@ -1,0 +1,15 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/puzzle-builder/components/zoom-block/zoom-block-component-ts
+import { Component, OnInit } from "@angular/core";
+import { DecoratorTypesService } from "src/app/featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+var EXPRESSION_START74 = { "zoom": "true" };
+@Component({
+    selector: "app-zoom-block",
+    templateUrl: "./zoom-block.component.html",
+    styleUrls: ["./zoom-block.component.scss"]
+})
+export class ZoomBlockComponent implements OnInit {
+    constructor() { }
+    ngOnInit(): void {
+    }
+}
+var EXPRESSION_END74 = { "EXPRESSION_END": "---------------------------" };

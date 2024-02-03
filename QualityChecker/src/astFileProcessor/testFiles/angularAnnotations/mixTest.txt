@@ -1,0 +1,31 @@
+
+@Injectable({
+  providedIn: 'root'
+})
+@DecoratorTypesService.wholeBlockFile({})
+export class GameConfigurationService {
+
+  availableAlgorithms: AlgorithmMap[] = [];
+
+  constructor(
+    @DecoratorTypesService.skipLineParameter({"puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']"}, "[ARG=drawBordersService]")
+    private drawBordersService: DrawBordersService,
+    @DecoratorTypesService.skipLineParameter({"puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']"}, "[ARG=store]")
+    private store: Store<PuzzleAppState>,
+    @DecoratorTypesService.skipLineParameter({"puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']"}, "[ARG=shufflePuzzlesService]")
+    private shufflePuzzlesService: ShufflePuzzlesService
+    ) {
+      // @ts-ignore
+      @DecoratorTypesService.skipLineVariableDeclaration({"puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']"}, "[NOT=let puzzleQuatro = null]")
+      let puzzleQuatro = {"name": "jigsaw", "instance": new PuzzleGeneratorQuadroService(this.drawBordersService, this.store, this.shufflePuzzlesService)};
+
+      if (puzzleQuatro != null) this.availableAlgorithms.push(puzzleQuatro);
+      // @ts-ignore
+      @DecoratorTypesService.skipLineVariableDeclaration({"puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']"}, "[NOT=let puzzleQuatro2 = null;]")
+      let puzzleQuatro2 = {"name": "jigsaw2", "instance": new PuzzleGeneratorQuadroService(this.drawBordersService, this.store, this.shufflePuzzlesService)};
+
+      if (puzzleQuatro2 != null) this.availableAlgorithms.push(puzzleQuatro2);
+      return this.applyToMe();
+    }
+ }
+ 

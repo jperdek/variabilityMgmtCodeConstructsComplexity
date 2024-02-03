@@ -1,0 +1,13 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/services/utils/random-utils-service-ts
+import { Injectable } from "@angular/core";
+import { DecoratorTypesService } from "src/app/featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+var EXPRESSION_START129 = {};
+@Injectable({
+    providedIn: "root"
+})
+export class RandomUtilsService {
+    public static randomNumber(min: number, max: number): number {
+        return Math.random() * (max - min) + min;
+    }
+}
+var EXPRESSION_END129 = { "EXPRESSION_END": "---------------------------" };

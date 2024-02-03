@@ -1,0 +1,50 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/puzzle-builder/puzzle-builder-module-ts
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { PuzzleBuilderRoutingModule } from "./puzzle-builder-routing.module";
+import { PuzzleBoardComponent } from "./pages/puzzle-board/puzzle-board.component";
+import { PuzzleBuilderComponent } from "./pages/puzzle-builder-component/puzzle-builder.component";
+import { MaterialModule } from "../material/material.module";
+import { PuzzleChooserComponent } from "./pages/puzzle-chooser/puzzle-chooser.component";
+import { RemoveDirective } from "../directives/remove.directive";
+import { TemplatePreviewComponent } from "./pages/template-preview/template-preview.component";
+import { InsertTemplateImageComponent } from "./pages/insert-template-image/insert-template-image.component";
+import { DragAndDropDirective } from "../directives/drag-and-drop.directive";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { PuzzleChooserBottomSheetComponent } from "./pages/bottom-sheets/puzzle-chooser-bottom-sheet/puzzle-chooser-bottom-sheet.component";
+import { TemplatePreviewBottomSheetComponent } from "./pages/bottom-sheets/template-preview-bottom-sheet/template-preview-bottom-sheet.component";
+import { InsertTemplateImageBottomSheetComponent } from "./pages/bottom-sheets/insert-template-image-bottom-sheet/insert-template-image-bottom-sheet.component";
+import { ZoomManagementComponent } from "./pages/zoom-management/zoom-management.component";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { ZoomMenuComponent } from "./components/zoom-menu/zoom-menu.component";
+import { GalleryComponent } from "./pages/gallery/gallery.component";
+import { DragAndDropImageComponent } from "./components/drag-and-drop-image/drag-and-drop-image.component";
+import { GalleryBottomSheetComponent } from "./pages/bottom-sheets/gallery-bottom-sheet/gallery-bottom-sheet.component";
+import { ZoomManagementBottomSheetComponent } from "./pages/bottom-sheets/zoom-management-bottom-sheet/zoom-management-bottom-sheet.component";
+import { GameConfigurationComponent } from "../game-configuration/game-configuration.component";
+import { ZoomBlockComponent } from "./components/zoom-block/zoom-block.component";
+import { SetZoomComponent } from "./pages/zoom-management/set-zoom/set-zoom.component";
+import { SetZoomPositionComponent } from "./pages/zoom-management/set-zoom-position/set-zoom-position.component";
+const declZoomManagementComponent = ZoomManagementComponent;
+let declZoomManagementComponentAlter13 = PuzzleBoardComponent;
+const declZoomMenuComponent = ZoomMenuComponent;
+let declZoomMenuComponentAlter14 = PuzzleBoardComponent;
+const declGalleryComponent = GalleryComponent;
+let declGalleryComponentAlter15 = PuzzleBoardComponent;
+const declGalleryBottomSheetComponent = GalleryBottomSheetComponent;
+let declGalleryBottomSheetComponentAlter16 = PuzzleBoardComponent;
+const declZoomManagementBottomSheetComponent = ZoomManagementBottomSheetComponent;
+let declZoomManagementBottomSheetComponentAlter17 = PuzzleBoardComponent;
+const declZoomBlockComponent = ZoomBlockComponent;
+let declZoomBlockComponentAlter18 = PuzzleBoardComponent;
+const declSetZoomComponent = SetZoomComponent;
+let declSetZoomComponentAlter19 = PuzzleBoardComponent;
+const declSetZoomPositionComponent = SetZoomPositionComponent;
+let declSetZoomPositionComponentAlter20 = PuzzleBoardComponent;
+@NgModule({
+    declarations: [PuzzleBoardComponent, PuzzleBuilderComponent, PuzzleChooserComponent, RemoveDirective, TemplatePreviewComponent, InsertTemplateImageComponent, DragAndDropDirective, PuzzleChooserBottomSheetComponent, TemplatePreviewBottomSheetComponent, InsertTemplateImageBottomSheetComponent, declZoomManagementComponent, declZoomMenuComponent, declGalleryComponent, DragAndDropImageComponent, declGalleryBottomSheetComponent, declZoomManagementBottomSheetComponent, GameConfigurationComponent, declZoomBlockComponent, declSetZoomComponent, declSetZoomPositionComponent],
+    imports: [CommonModule, PuzzleBuilderRoutingModule, MaterialModule, ReactiveFormsModule, FormsModule, FlexLayoutModule],
+    exports: [InsertTemplateImageComponent]
+})
+export class PuzzleBuilderModule {
+}

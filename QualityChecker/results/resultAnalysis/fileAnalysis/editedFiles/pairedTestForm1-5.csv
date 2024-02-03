@@ -1,0 +1,15 @@
+comparedName;correlation;statistics W;p.value;confidence.interval.start;confidence.interval.end;estimate;p > 0.05
+Cycl..Number;1.0000;0.0000;NaN;NaN;NaN;NaN;TRUE
+Cycl..Density;1.0000;45.0000;0.0092;0.2450;1.1065;0.4946;FALSE
+Halstead.Bugs;0.9998;0.0000;0.0092;-0.0360;-0.0104;-0.0205;FALSE
+Halstead.Difficulty;0.9999;5.0000;0.0440;-0.5280;-0.0120;-0.2209;FALSE
+Halstead.Effort;0.9996;0.0000;0.0092;-2876.0685;-551.8090;-1198.8455;FALSE
+Halstead.Length;0.9998;0.0000;0.0091;-15.9999;-4.0001;-9.0000;FALSE
+Halstead.Time;0.9996;0.0000;0.0092;-159.7816;-30.6560;-66.6025;FALSE
+Halstead.Vocabulary;0.9999;0.0000;0.0034;NaN;NaN;-1.0000;FALSE
+Halstead.Identifiers.Distinct;0.9999;0.0000;0.0034;NaN;NaN;-1.0000;FALSE
+Halstead.Identifiers.Total;0.9996;0.0000;0.0091;-8.0000;-2.0000;-4.5000;FALSE
+Halstead.Identifiers.Distinct.1;1.0000;0.0000;NaN;NaN;NaN;NaN;TRUE
+Halstead.Identifiers.Total.1;0.9999;0.0000;0.0091;-8.0000;-2.0000;-4.5000;FALSE
+LOC.Physical;0.9990;0.0000;0.0092;-12.0000;-2.5000;-5.5001;FALSE
+LOC.Logical;0.9996;0.0000;0.0091;-8.0000;-2.0000;-4.5000;FALSE

@@ -1,0 +1,6 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/models/zoomManagementInterface-ts
+class DecoratorFileCopy {
+}
+export interface ZoomManagementInterface {
+    setCenterXAndY(x: number, y: number): void;
+}

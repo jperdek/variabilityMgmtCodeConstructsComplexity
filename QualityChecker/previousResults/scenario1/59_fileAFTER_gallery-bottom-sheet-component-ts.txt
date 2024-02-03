@@ -1,0 +1,17 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/puzzle-builder/pages/bottom-sheets/gallery-bottom-sheet/gallery-bottom-sheet-component-ts
+import { Component } from "@angular/core";
+import { MatBottomSheetRef } from "@angular/material/bottom-sheet";
+import { DecoratorTypesService } from "src/app/featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+@Component({
+    selector: "app-gallery-bottom-sheet",
+    templateUrl: "./gallery-bottom-sheet.component.html",
+    styleUrls: ["./gallery-bottom-sheet.component.scss"]
+})
+@DecoratorTypesService.wholeBlockFile()
+export class GalleryBottomSheetComponent {
+    constructor(bottomSheetRef: MatBottomSheetRef<GalleryBottomSheetComponent>) { }
+    public openLink(event: MouseEvent): void {
+        this.bottomSheetRef.dismiss();
+        event.preventDefault();
+    }
+}

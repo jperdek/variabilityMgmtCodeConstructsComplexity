@@ -1,0 +1,7 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/services/puzzleControllers/decoratorFabricMenuServices/decorator-ts
+class DecoratorFileCopy {
+}
+export interface Decorator {
+    setDecorated(decorated: boolean): void;
+    getDecorated(): boolean;
+}

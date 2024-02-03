@@ -1,0 +1,21 @@
+comparedName;correlation;statistics W;p.value;confidence.interval.start;confidence.interval.end;estimate
+Associated.with;-1;-1;-1;-1;-1;-1
+Overall.file.decorastors;1;0;NaN;NaN;NaN;NaN
+Cycl..Number;NA;0;NaN;NaN;NaN;NaN
+Cycl..Density;0.974819516;2485;3.58E-13;2.283458673;4.195943254;3.02347905
+Halstead.Bugs;0.961964419;0;2.45E-13;-0.015453309;-0.013022261;-0.014015157
+Halstead.Difficulty;0.83993703;248;5.93E-09;-0.803481326;-0.602446414;-0.738993868
+Halstead.Effort;0.188657059;170;2.21E-10;-1493.101517;-503.0364562;-841.6983394
+Halstead.Length;0.963705405;0;9.34E-17;-6;-6;-6
+Halstead.Time;0.188657059;170;2.21E-10;-82.95006642;-27.946496;-46.76091096
+Halstead.Vocabulary;0.851728468;1.5;4.21E-14;-3.499947694;-2.999978784;-3.000031026
+Halstead Volume;0.964445903;0;2.48E-13;-45.95904237;-39.32147999;-42.23590443
+Halstead.Identifiers.Distinct;0.972405003;0;2.57E-16;-2;-2;-2
+Halstead.Identifiers.Total;0.972392991;0;9.34E-17;-2;-2;-2
+Halstead.Identifiers.Names;-1;-1;-1;-1;-1;-1
+Halstead.Identifiers.Distinct.1;0.511629153;50;2.14E-12;-1.499964377;-1.000028826;-1.000028445
+Halstead.Identifiers.Total.1;0.963705872;0;9.85E-17;-4;-4;-4
+Halstead.Identifiers.Names.1;-1;-1;-1;-1;-1;-1
+LOC.Physical;0.899515923;0;1.43E-16;-1;-1;-1
+LOC.Logical;0.963718183;0;9.85E-17;-2;-2;-2
+X;-1;-1;-1;-1;-1;-1

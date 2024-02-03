@@ -1,0 +1,14 @@
+<div class="zoom-focus-block">
+  <mat-form-field appearance="outline" floatLabel="always" class="center-input-part">
+      <mat-label class="center-label">Position X</mat-label>
+      <input matInput class="center-input center-x" type="number" placeholder="0" [(ngModel)]="centerX" (change)="centerXEmitter"
+      name="centerX">
+      <span matSuffix class="suffix">x</span>
+  </mat-form-field>
+  <mat-form-field appearance="outline" floatLabel="always" class="center-input-part">
+      <mat-label class="center-label">Position Y</mat-label>
+      <input matInput class="center-input center-y" type="number" placeholder="0" [(ngModel)]="centerY" (change)="centerYEmitter"
+      name="centerY">
+      <span matSuffix class="suffix">y</span>
+  </mat-form-field>
+</div>

@@ -1,0 +1,10 @@
+@Injectable({
+  providedIn: 'root'
+})
+export class PuzzleManagerService {
+  constructor(
+    @DecoratorTypesService.skipLineParameter({"puzzleAlgorithmType": "['JIGSAW', 'ANTI-JIGSAW', 'JIGSAW2']"}, "private store: Store<PuzzleAppState>,")
+    private serviceToSkip: ServiceToSkipService, //private store: Store<PuzzleAppState>
+  )
+
+}

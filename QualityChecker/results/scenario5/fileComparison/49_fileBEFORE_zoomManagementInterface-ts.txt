@@ -1,0 +1,9 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/models/zoomManagementInterface-ts
+import { DecoratorTypesService } from "../featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+var EXPRESSION_START42 = {};
+class DecoratorFileCopy {
+}
+var EXPRESSION_END42 = { "EXPRESSION_END": "---------------------------" };
+export interface ZoomManagementInterface {
+    setCenterXAndY(x: number, y: number): void;
+}

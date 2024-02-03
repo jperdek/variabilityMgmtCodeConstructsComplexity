@@ -1,0 +1,20 @@
+Name;Type;Component partial value (from all SPL);Whole value with its subcomponents;Component valuability (in LOC);Whole SPL weight
+puzzle-controller-manager2;service;0,1862;1506;264;8088,75
+puzzle-controller-manager;service;0,1854;1500;258;8088,75
+game-configuration;service;0,1694;1370;78;8088,75
+puzzle-generator-quadro;service;0,1624;1314;664;8088,75
+puzzle-generator-quadro2;service;0,1622;1312;664;8088,75
+draw-borders;service;0,1399;1132;566;8088,75
+draw-borders2;service;0,1397;1130;564;8088,75
+zoom-management;component;0,0686;554,75;82,75;8088,75
+gallery;component;0,051;412,75;88,75;8088,75
+set-zoom-position;component;0,0452;365,75;41,75;8088,75
+puzzle-board;component;0,0427;345,5;21,5;8088,75
+routing;mock;0,0254;205,25;74;8088,75
+gallery-bottom-sheet;component;0,0118;95,5;6,75;8088,75
+zoom-management-bottom-sheet;component;0,0111;89,5;6,75;8088,75
+insert-template-image-bottom-sheet;component;0,0087;70;7,25;8088,75
+insert-template-image;component;0,0078;62,75;12,5;8088,75
+shuffle-puzzles;service;0,0077;62;62;8088,75
+zoom-block;component;0,0062;49,75;13,5;8088,75
+set-zoom;component;0,0049;40;40;8088,75

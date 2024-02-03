@@ -1,0 +1,9 @@
+@Injectable({
+  providedIn: 'root'
+})
+export class PuzzleManagerService {
+
+  // @ts-ignore
+  @DecoratorTypesService.skipLineClassVariableDeclaration({"puzzleAlgorithmType": "['ANTI-JIGSAW']", "AND": {"puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']" }}, "private static usedService555 = PuzzleGeneratorQuadroService;") newA2;
+  //private static usedService = PuzzleGeneratorQuadroService;
+}

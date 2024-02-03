@@ -1,0 +1,10 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/puzzle-builder/pages/puzzle-builder-component/puzzle-builder-component-ts
+import { Component } from "@angular/core";
+@Component({
+    selector: "app-puzzle-builder",
+    templateUrl: "./puzzle-builder.component.html",
+    styleUrls: ["./puzzle-builder.component.scss"]
+})
+export class PuzzleBuilderComponent {
+    constructor() { }
+}

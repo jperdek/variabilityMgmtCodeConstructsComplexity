@@ -1,0 +1,68 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/mockups/routing-all-mock-ts
+import { GameConfigurationComponent } from "../game-configuration/game-configuration.component";
+import { RoutingModel } from "../models/routingModel";
+var EXPRESSION_START12;
+import { GalleryBottomSheetComponent } from "../puzzle-builder/pages/bottom-sheets/gallery-bottom-sheet/gallery-bottom-sheet.component";
+var EXPRESSION_END12 = { "EXPRESSION_END": "---------------------------" };
+import { InsertTemplateImageBottomSheetComponent } from "../puzzle-builder/pages/bottom-sheets/insert-template-image-bottom-sheet/insert-template-image-bottom-sheet.component";
+import { PuzzleChooserBottomSheetComponent } from "../puzzle-builder/pages/bottom-sheets/puzzle-chooser-bottom-sheet/puzzle-chooser-bottom-sheet.component";
+import { TemplatePreviewBottomSheetComponent } from "../puzzle-builder/pages/bottom-sheets/template-preview-bottom-sheet/template-preview-bottom-sheet.component";
+var EXPRESSION_START13;
+import { ZoomManagementBottomSheetComponent } from "../puzzle-builder/pages/bottom-sheets/zoom-management-bottom-sheet/zoom-management-bottom-sheet.component";
+var EXPRESSION_END13 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START14;
+import { GalleryComponent } from "../puzzle-builder/pages/gallery/gallery.component";
+var EXPRESSION_END14 = { "EXPRESSION_END": "---------------------------" };
+import { InsertTemplateImageComponent } from "../puzzle-builder/pages/insert-template-image/insert-template-image.component";
+import { PuzzleChooserComponent } from "../puzzle-builder/pages/puzzle-chooser/puzzle-chooser.component";
+import { TemplatePreviewComponent } from "../puzzle-builder/pages/template-preview/template-preview.component";
+var EXPRESSION_START15;
+import { ZoomManagementComponent } from "../puzzle-builder/pages/zoom-management/zoom-management.component";
+var EXPRESSION_END15 = { "EXPRESSION_END": "---------------------------" };
+let RoutingModelDataAll: RoutingModel[] = [
+    {
+        "name": "Load image",
+        "path": "/puzzle/loadImage",
+        "bottomSheetComponent": InsertTemplateImageBottomSheetComponent,
+        "componentPathInModule": "loadImage",
+        "componentRef": InsertTemplateImageComponent
+    },
+    {
+        "name": "Play",
+        "path": "/puzzle/selectPuzzles",
+        "bottomSheetComponent": PuzzleChooserBottomSheetComponent,
+        "componentPathInModule": "selectPuzzles",
+        "componentRef": PuzzleChooserComponent
+    },
+    {
+        "name": "Preview",
+        "path": "/puzzle/preview",
+        "bottomSheetComponent": TemplatePreviewBottomSheetComponent,
+        "componentPathInModule": "preview",
+        "componentRef": TemplatePreviewComponent
+    },
+    {
+        "name": "Config",
+        "path": "/puzzle/config",
+        "bottomSheetComponent": null,
+        "componentPathInModule": "config",
+        "componentRef": GameConfigurationComponent
+    }
+];
+var EXPRESSION_START16;
+let zoomConfig = { "name": "Zoom", "path": "/puzzle/zoom", "bottomSheetComponent": ZoomManagementBottomSheetComponent, "componentPathInModule": "zoom", "componentRef": ZoomManagementComponent };
+var ELSE16 = { "ELSE": "~~~~~~~~~~~~~~~~~~~~~~~~~" };
+let zoomConfigAlter1 = null;
+var EXPRESSION_END16 = { "EXPRESSION_END": "---------------------------" };
+if (zoomConfig !== null)
+    RoutingModelDataAll.push(zoomConfig);
+var EXPRESSION_START17;
+let galleryConfig = { "name": "Gallery", "path": "/puzzle/gallery", "bottomSheetComponent": GalleryBottomSheetComponent, "componentPathInModule": "gallery", "componentRef": GalleryComponent };
+var ELSE17 = { "ELSE": "~~~~~~~~~~~~~~~~~~~~~~~~~" };
+let galleryConfigAlter2 = null;
+var EXPRESSION_END17 = { "EXPRESSION_END": "---------------------------" };
+if (galleryConfig != null)
+    RoutingModelDataAll.push(galleryConfig);
+export default RoutingModelDataAll;
+var EXPRESSION_START18;
+var EXPRESSION_END18 = { "EXPRESSION_END": "---------------------------" };

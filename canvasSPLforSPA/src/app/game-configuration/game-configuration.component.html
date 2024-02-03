@@ -1,0 +1,17 @@
+<div class="game-config-content">
+  <form [formGroup]="configurationFormGroup">
+    <h1 class="main-heading">Game Config</h1>
+    <div class="game-config-wrapper">
+      <mat-form-field appearance="fill">
+        <mat-label></mat-label>
+        <mat-select name="algorithm" #algorithm formControlName="algorithm">
+          <mat-option *ngFor="let algorithmConfig of getAvailableAlgorithms(); let index = index" [value]="index">
+            {{algorithmConfig.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-raised-button color="accent" class="playable-button" (click)="startNewGame();">Play!</button>
+    </div>
+  </form>
+</div>

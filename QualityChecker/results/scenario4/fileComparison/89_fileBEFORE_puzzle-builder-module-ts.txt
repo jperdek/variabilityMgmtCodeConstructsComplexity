@@ -1,0 +1,93 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/puzzle-builder/puzzle-builder-module-ts
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { PuzzleBuilderRoutingModule } from "./puzzle-builder-routing.module";
+import { PuzzleBoardComponent } from "./pages/puzzle-board/puzzle-board.component";
+import { PuzzleBuilderComponent } from "./pages/puzzle-builder-component/puzzle-builder.component";
+import { MaterialModule } from "../material/material.module";
+import { PuzzleChooserComponent } from "./pages/puzzle-chooser/puzzle-chooser.component";
+import { RemoveDirective } from "../directives/remove.directive";
+import { TemplatePreviewComponent } from "./pages/template-preview/template-preview.component";
+import { InsertTemplateImageComponent } from "./pages/insert-template-image/insert-template-image.component";
+import { DragAndDropDirective } from "../directives/drag-and-drop.directive";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { PuzzleChooserBottomSheetComponent } from "./pages/bottom-sheets/puzzle-chooser-bottom-sheet/puzzle-chooser-bottom-sheet.component";
+import { TemplatePreviewBottomSheetComponent } from "./pages/bottom-sheets/template-preview-bottom-sheet/template-preview-bottom-sheet.component";
+import { InsertTemplateImageBottomSheetComponent } from "./pages/bottom-sheets/insert-template-image-bottom-sheet/insert-template-image-bottom-sheet.component";
+var EXPRESSION_START106 = { "OR": { "zoomCoordinates": "true", "zoomValue": "true" } };
+import { ZoomManagementComponent } from "./pages/zoom-management/zoom-management.component";
+var EXPRESSION_END106 = { "EXPRESSION_END": "---------------------------" };
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+var EXPRESSION_START107 = { "zoom": "true" };
+import { ZoomMenuComponent } from "./components/zoom-menu/zoom-menu.component";
+var EXPRESSION_END107 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START108 = { "imageGallery": "true" };
+import { GalleryComponent } from "./pages/gallery/gallery.component";
+var EXPRESSION_END108 = { "EXPRESSION_END": "---------------------------" };
+import { DragAndDropImageComponent } from "./components/drag-and-drop-image/drag-and-drop-image.component";
+var EXPRESSION_START109 = { "imageGallery": "true" };
+import { GalleryBottomSheetComponent } from "./pages/bottom-sheets/gallery-bottom-sheet/gallery-bottom-sheet.component";
+var EXPRESSION_END109 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START110 = { "OR": { "zoomCoordinates": "true", "zoomValue": "true" } };
+import { ZoomManagementBottomSheetComponent } from "./pages/bottom-sheets/zoom-management-bottom-sheet/zoom-management-bottom-sheet.component";
+var EXPRESSION_END110 = { "EXPRESSION_END": "---------------------------" };
+import { GameConfigurationComponent } from "../game-configuration/game-configuration.component";
+var EXPRESSION_START111 = { "zoom": "true" };
+import { ZoomBlockComponent } from "./components/zoom-block/zoom-block.component";
+var EXPRESSION_END111 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START112 = { "zoomValue": "true" };
+import { SetZoomComponent } from "./pages/zoom-management/set-zoom/set-zoom.component";
+var EXPRESSION_END112 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START113 = { "zoomCoordinates": "true" };
+import { SetZoomPositionComponent } from "./pages/zoom-management/set-zoom-position/set-zoom-position.component";
+var EXPRESSION_END113 = { "EXPRESSION_END": "---------------------------" };
+import { DecoratorTypesService } from "../featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+var EXPRESSION_START114 = { "OR": { "zoomCoordinates": "true", "zoomValue": "true" } };
+const declZoomManagementComponent = ZoomManagementComponent;
+var ELSE114 = { "ELSE": "~~~~~~~~~~~~~~~~~~~~~~~~~" };
+let declZoomManagementComponentAlter5 = PuzzleBoardComponent;
+var EXPRESSION_END114 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START115 = { "zoom": "true" };
+const declZoomMenuComponent = ZoomMenuComponent;
+var ELSE115 = { "ELSE": "~~~~~~~~~~~~~~~~~~~~~~~~~" };
+let declZoomMenuComponentAlter6 = PuzzleBoardComponent;
+var EXPRESSION_END115 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START116 = { "imageGallery": "true" };
+const declGalleryComponent = GalleryComponent;
+var ELSE116 = { "ELSE": "~~~~~~~~~~~~~~~~~~~~~~~~~" };
+let declGalleryComponentAlter7 = PuzzleBoardComponent;
+var EXPRESSION_END116 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START117 = { "imageGallery": "true" };
+const declGalleryBottomSheetComponent = GalleryBottomSheetComponent;
+var ELSE117 = { "ELSE": "~~~~~~~~~~~~~~~~~~~~~~~~~" };
+let declGalleryBottomSheetComponentAlter8 = PuzzleBoardComponent;
+var EXPRESSION_END117 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START118 = { "OR": { "zoomCoordinates": "true", "zoomValue": "true" } };
+const declZoomManagementBottomSheetComponent = ZoomManagementBottomSheetComponent;
+var ELSE118 = { "ELSE": "~~~~~~~~~~~~~~~~~~~~~~~~~" };
+let declZoomManagementBottomSheetComponentAlter9 = PuzzleBoardComponent;
+var EXPRESSION_END118 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START119 = { "zoom": "true" };
+const declZoomBlockComponent = ZoomBlockComponent;
+var ELSE119 = { "ELSE": "~~~~~~~~~~~~~~~~~~~~~~~~~" };
+let declZoomBlockComponentAlter10 = PuzzleBoardComponent;
+var EXPRESSION_END119 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START120 = { "zoomValue": "true" };
+const declSetZoomComponent = SetZoomComponent;
+var ELSE120 = { "ELSE": "~~~~~~~~~~~~~~~~~~~~~~~~~" };
+let declSetZoomComponentAlter11 = PuzzleBoardComponent;
+var EXPRESSION_END120 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START121 = { "zoomCoordinates": "true" };
+const declSetZoomPositionComponent = SetZoomPositionComponent;
+var ELSE121 = { "ELSE": "~~~~~~~~~~~~~~~~~~~~~~~~~" };
+let declSetZoomPositionComponentAlter12 = PuzzleBoardComponent;
+var EXPRESSION_END121 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START122 = {};
+@NgModule({
+    declarations: [PuzzleBoardComponent, PuzzleBuilderComponent, PuzzleChooserComponent, RemoveDirective, TemplatePreviewComponent, InsertTemplateImageComponent, DragAndDropDirective, PuzzleChooserBottomSheetComponent, TemplatePreviewBottomSheetComponent, InsertTemplateImageBottomSheetComponent, declZoomManagementComponent, declZoomMenuComponent, declGalleryComponent, DragAndDropImageComponent, declGalleryBottomSheetComponent, declZoomManagementBottomSheetComponent, GameConfigurationComponent, declZoomBlockComponent, declSetZoomComponent, declSetZoomPositionComponent],
+    imports: [CommonModule, PuzzleBuilderRoutingModule, MaterialModule, ReactiveFormsModule, FormsModule, FlexLayoutModule],
+    exports: [InsertTemplateImageComponent]
+})
+export class PuzzleBuilderModule {
+}
+var EXPRESSION_END122 = { "EXPRESSION_END": "---------------------------" };

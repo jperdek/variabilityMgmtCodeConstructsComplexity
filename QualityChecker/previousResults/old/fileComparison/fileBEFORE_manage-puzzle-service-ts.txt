@@ -1,0 +1,145 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/services/puzzleGenerator/manage-puzzle-service-ts
+import { Injectable } from "@angular/core";
+import { Store } from "@ngrx/store";
+import { fabric } from "fabric";
+import { ExtendedPuzzle } from "src/app/models/extendedPuzzle";
+import { PuzzleAppState } from "src/app/store";
+import { Puzzle } from "src/app/store/puzzles/puzzles";
+import { addPuzzle, returnPuzzle, returnPuzzles } from "src/app/store/puzzles/puzzles.actions";
+import { PuzzleControllerManagerService } from "../puzzleControllers/puzzle-controller-manager.service";
+import { DisableControlsService } from "../utils/disable-controls.service";
+import { SetPuzzleAreaOnBoardService } from "./set-puzzle-area-on-board.service";
+import { DecoratorTypesService } from "src/app/featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+@Injectable({
+    providedIn: "root"
+})
+@DecoratorTypesService.wholeBlockFile({})
+export class ManageGraphicsService {
+    enablePuzzleRotation = true;
+    puzzleAreaOnBoardService?: SetPuzzleAreaOnBoardService;
+    constructor(store: Store<PuzzleAppState>, puzzleControllerManagerService: PuzzleControllerManagerService, //must be instance of given type
+    disableControlsService: DisableControlsService) { }
+    public setPuzzleAreaOnBoardService(setPuzzleAreaOnBoardService: SetPuzzleAreaOnBoardService): void {
+        this.puzzleAreaOnBoardService = setPuzzleAreaOnBoardService;
+    }
+    public addPuzzleToBoard(puzzle: Puzzle, boardCanvas: fabric.Canvas, boardCanvasWidth: number, boardCanvasHeight: number): void {
+        this.removeFromStore(puzzle.id);
+        boardCanvas.discardActiveObject();
+        if (this.enablePuzzleRotation) {
+            this.putCreatedImage(puzzle, boardCanvas, boardCanvasWidth, boardCanvasHeight);
+        }
+        else {
+            this.putCreatedImageWithoutRotation(puzzle, boardCanvas, boardCanvasWidth, boardCanvasHeight);
+        }
+    }
+    removeFromStore(puzzleId: string): void {
+        this.store.dispatch(returnPuzzle({ id: puzzleId }));
+    }
+    putCreatedImage(puzzle: Puzzle, boardCanvas: fabric.Canvas, boardCanvasWidth: number, boardCanvasHeight: number): void {
+        fabric.Image.fromURL(puzzle.puzzleImageSrc, (img) => {
+            (img as ExtendedPuzzle).puzzleData = puzzle;
+            img.set("angle", puzzle.rotateAngle);
+            img.left = 25;
+            img.top = 25;
+            const group = new fabric.Group([img]);
+            fabric.Image.fromURL(img.toDataURL({}), (image) => {
+                if (group.width !== undefined && group.height !== undefined) {
+                    image.scaleToWidth((group.width / puzzle.imageCanvasWidth) * boardCanvasWidth);
+                    image.scaleToHeight((group.height / puzzle.imageCanvasHeight) * boardCanvasHeight);
+                }
+                (image as ExtendedPuzzle).puzzleData = puzzle;
+                this.disableControlsService.removeScalingOptions(image);
+                this.setForResize(image as ExtendedPuzzle, boardCanvasWidth, boardCanvasHeight);
+                this.puzzleControllerManagerService.registerControllers(this);
+                boardCanvas.add(image); // puts image - puzzle - to canvas
+                boardCanvas.setActiveObject(image); // set focus on inseted image
+                image.bringToFront(); // bring image to front
+            });
+        });
+    }
+    putCreatedImageWithoutRotation(puzzle: Puzzle, boardCanvas: fabric.Canvas, boardCanvasWidth: number, boardCanvasHeight: number): void {
+        fabric.Image.fromURL(puzzle.puzzleImageSrc, (img) => {
+            (img as ExtendedPuzzle).puzzleData = puzzle;
+            img.left = 25;
+            img.top = 25;
+            img.scaleToWidth((puzzle.width / puzzle.imageCanvasWidth) * boardCanvasWidth);
+            img.scaleToHeight((puzzle.height / puzzle.imageCanvasHeight) * boardCanvasHeight);
+            this.disableControlsService.removeScalingOptions(img);
+            this.setForResize(img as ExtendedPuzzle, boardCanvasWidth, boardCanvasHeight);
+            this.puzzleControllerManagerService.registerControllers(this);
+            boardCanvas.add(img); // puts image - puzzle - to canvas
+            boardCanvas.setActiveObject(img); // set focus on inseted image
+            img.bringToFront(); // bring image to front
+        });
+    }
+    setForResize(boardPuzzle: ExtendedPuzzle, boardCanvasWidth: number, boardCanvasHeight: number): void {
+        boardPuzzle.previousCanvasWidth = boardCanvasWidth;
+        boardPuzzle.previousCanvasHeight = boardCanvasHeight;
+    }
+    public removeFromBoard(puzzleOnBoard: fabric.Image, boardCanvas: fabric.Canvas): void {
+        this.addToStore((puzzleOnBoard as ExtendedPuzzle).puzzleData);
+        boardCanvas.remove(puzzleOnBoard);
+        boardCanvas.discardActiveObject();
+    }
+    addToStore(puzzle: Puzzle): void {
+        this.store.dispatch(addPuzzle({ puzzle }));
+    }
+    public animatePuzzleLocationOnBoard(puzzleOnBoard: fabric.Image, boardCanvas: fabric.Canvas): void {
+        const puzzleData = (puzzleOnBoard as ExtendedPuzzle).puzzleData;
+        const topLeftPoint = this.puzzleAreaOnBoardService?.getTopLeftPoint() || { x: 26, y: 26 };
+        const circle = this.createCircle(puzzleData.positionLeftOnImage *
+            (puzzleData.boardCanvasWidth / puzzleData.imageCanvasWidth) + topLeftPoint.x, puzzleData.positionTopOnImage *
+            (puzzleData.boardCanvasHeight / puzzleData.imageCanvasHeight) + topLeftPoint.y);
+        boardCanvas.add(circle);
+        setTimeout(() => this.animateFlow(circle, boardCanvas, (puzzleData.width / 2) *
+            (puzzleData.boardCanvasWidth / puzzleData.imageCanvasWidth), 5, circle.radius, circle.top, circle.left), 100);
+    }
+    animateFlow(circle: fabric.Circle, boardCanvas: fabric.Canvas, maxRadius: number, repeat: number, previousIterationRadius: number | undefined, previousIterationTop: number | undefined, previousIterationLeft: number | undefined): void {
+        if (circle.radius !== undefined && circle.radius < maxRadius) {
+            if (circle.top !== undefined && circle.left !== undefined) {
+                circle.set("radius", circle.radius + 5);
+                circle.set("top", circle.top - 3);
+                circle.set("left", circle.left - 3);
+            }
+            circle.setCoords();
+            circle.calcCoords();
+            boardCanvas.renderAll();
+            setTimeout(() => this.animateFlow(circle, boardCanvas, maxRadius, repeat, previousIterationRadius, previousIterationTop, previousIterationLeft), 75);
+        }
+        else if (circle.radius === undefined) {
+            console.log("Error: circle not have radius, cant create animation!");
+        }
+        else {
+            if (repeat > 0) {
+                if (circle.radius !== undefined && circle.top !== undefined && circle.left !== undefined) {
+                    circle.set("radius", previousIterationRadius);
+                    circle.set("top", previousIterationTop);
+                    circle.set("left", previousIterationLeft);
+                }
+                else {
+                    console.log("Error: one of previous iteration values for animation is undefined!");
+                    return;
+                }
+                setTimeout(() => this.animateFlow(circle, boardCanvas, maxRadius, repeat - 1, previousIterationRadius, previousIterationTop, previousIterationLeft), 100);
+            }
+            else {
+                boardCanvas.remove(circle);
+            }
+        }
+    }
+    public createCircle(left: number, top: number, width: number = 2, color: string = "transparent", selectable: boolean = false): fabric.Circle {
+        const circle = new fabric.Circle({
+            left,
+            top,
+            fill: color,
+            radius: width,
+            stroke: "red",
+            strokeWidth: 3,
+            selectable
+        });
+        return circle;
+    }
+    public removeAllFromStore(): void {
+        this.store.dispatch(returnPuzzles());
+    }
+}

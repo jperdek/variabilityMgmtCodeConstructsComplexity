@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+import { of } from 'rxjs';
+import { Observable } from 'rxjs';
+import { GalleryMock } from 'src/app/mockups/gallery.mock';
+import { TemplateCategory, TemplateImage } from 'src/app/models/defaultTemplates';
+import { PuzzleManagerService } from 'src/app/services/puzzleGenerator/puzzle-manager.service';
+
+@Injectable({
+ providedIn: 'root',
+})
+@DecoratorTypesService.wholeBlockFile("WHOLE RESTRICTED STRING")
+export class GalleryService {
+
+  constructor(puzzleManagerService: PuzzleManagerService) { }
+
+  public startNewGame(image: TemplateImage): void {
+    this.puzzleManagerService.startGame(image.src);
+  }
+}

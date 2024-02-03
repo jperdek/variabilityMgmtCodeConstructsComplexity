@@ -1,0 +1,9 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/models/point-ts
+import { DecoratorTypesService } from "../featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+@DecoratorTypesService.wholeBlockFile({})
+class DecoratorFileCopy {
+}
+export interface Point {
+    x: number;
+    y: number;
+}

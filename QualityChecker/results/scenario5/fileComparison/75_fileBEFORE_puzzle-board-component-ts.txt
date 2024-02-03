@@ -1,0 +1,26 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/puzzle-builder/pages/puzzle-board/puzzle-board-component-ts
+import { AfterViewInit, Component, ElementRef, ViewChild } from "@angular/core";
+import { DecoratorTypesService } from "src/app/featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+import { PuzzleManagerService } from "src/app/services/puzzleGenerator/puzzle-manager.service";
+var EXPRESSION_START56 = {};
+@Component({
+    selector: "app-puzzle-board",
+    templateUrl: "./puzzle-board.component.html",
+    styleUrls: ["./puzzle-board.component.scss"]
+})
+export class PuzzleBoardComponent implements AfterViewInit {
+    constructor(puzzleManager: PuzzleManagerService) { }
+    @ViewChild("puzzleBoard")
+    canvas?: ElementRef;
+    public ngAfterViewInit(): void {
+        this.initialize();
+        this.getCanvasElement();
+    }
+    public initialize(): void {
+        this.puzzleManager.initialize();
+    }
+    public getCanvasElement(): HTMLElement | null | undefined {
+        return document.getElementById("puzzleBoardWrapper");
+    }
+}
+var EXPRESSION_END56 = { "EXPRESSION_END": "---------------------------" };

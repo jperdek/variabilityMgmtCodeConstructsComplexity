@@ -1,0 +1,12 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/puzzle-builder/pages/insert-template-image/insert-template-image-component-ts
+import { Component } from "@angular/core";
+import { DecoratorTypesService } from "src/app/featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+var EXPRESSION_START83 = {};
+@Component({
+    selector: "app-insert-template-image",
+    templateUrl: "./insert-template-image.component.html",
+    styleUrls: ["./insert-template-image.component.scss"]
+})
+export class InsertTemplateImageComponent {
+}
+var EXPRESSION_END83 = { "EXPRESSION_END": "---------------------------" };

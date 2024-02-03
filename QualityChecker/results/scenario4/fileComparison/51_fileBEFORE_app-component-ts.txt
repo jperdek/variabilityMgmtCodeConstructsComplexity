@@ -1,0 +1,19 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/pages/app-component/app-component-ts
+import { Component } from "@angular/core";
+import { DecoratorTypesService } from "src/app/featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+var EXPRESSION_START69 = { "toOmitCompletely": "true" };
+import { TreeManagerService } from "src/app/featureManagement/tree-manager.service";
+var EXPRESSION_END69 = { "EXPRESSION_END": "---------------------------" };
+@Component({
+    selector: "app-root",
+    templateUrl: "./app.component.html",
+    styleUrls: ["./app.component.scss"]
+})
+export class AppComponent {
+    title = "puzzleToPlay";
+    constructor(
+    @DecoratorTypesService.skipLineParameter({ "toOmitCompletely": "true" })
+    treeManagerService: TreeManagerService) { }
+}
+var EXPRESSION_START70 = { "toOmitCompletely": "false" };
+var EXPRESSION_END70 = { "EXPRESSION_END": "---------------------------" };

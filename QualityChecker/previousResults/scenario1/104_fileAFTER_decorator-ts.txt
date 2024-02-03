@@ -1,0 +1,9 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/services/puzzleControllers/decoratorFabricMenuServices/decorator-ts
+import { DecoratorTypesService } from "src/app/featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+@DecoratorTypesService.wholeBlockFile()
+class DecoratorFileCopy {
+}
+export interface Decorator {
+    setDecorated(decorated: boolean): void;
+    getDecorated(): boolean;
+}

@@ -1,0 +1,8 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/mockups/puzzle-mock-ts
+import { DecoratorTypesService } from "../featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+import { Puzzle } from "../store/puzzles/puzzles";
+var EXPRESSION_START33 = {};
+class DecoratorFileCopy {
+}
+var EXPRESSION_END33 = { "EXPRESSION_END": "---------------------------" };
+export let PuzzleMock: Puzzle[] = [];

@@ -1,0 +1,16 @@
+Compared Name;Correlation;Statistics W;p-value;Confidence Interval Start;Confidence Interval End;Estimate;p>0.05
+Cyclomatic Number;1.0000;0;1.0000E+00;NaN;NaN;NaN;TRUE
+Cyclomatic Density;0.9689;0;2.4446E-10;-2.2099;-1.0945;-1.5640;FALSE
+Halstead Bugs;0.9985;2628;1.6119E-13;0.0100;0.0130;0.0115;FALSE
+Halstead Difficulty;0.9966;1146;3.4688E-01;-0.2430;0.2055;-0.1110;TRUE
+Halstead Effort;0.9964;2110;7.9176E-06;65.2910;123.2861;90.9735;FALSE
+Halstead Length;0.9986;2628;2.8747E-15;5.0000;5.0001;5.0001;FALSE
+Halstead Time;0.9964;2110;7.9176E-06;3.6270;6.8490;5.0539;FALSE
+Halstead Vocabulary;0.9967;2628;5.1514E-14;2.5000;3.5000;3.0000;FALSE
+Halstead Identifiers Distinct Operands;0.9972;2628;2.8747E-15;2.0000;2.0001;2.0001;FALSE
+Halstead Identifiers Total Operands;0.9991;2628;2.8743E-15;2.0000;2.0001;2.0001;FALSE
+Halstead Identifiers Distinct Operators;0.9955;276;1.5877E-05;2.0000;2.9999;2.0000;FALSE
+Halstead Identifiers Total Operators;0.9955;2628;2.8747E-15;3.0000;3.0001;3.0001;FALSE
+LOC Physical;0.9984;2701;1.1610E-16;1.0000;1.0000;1.0000;FALSE
+LOC Logical;0.9990;2628;2.8747E-15;1.0000;1.0001;1.0001;FALSE
+Class Maintainability;0.9973;0;1.8145E-01;-14.3509;-4.8871;-9.9568;TRUE

@@ -1,0 +1,9 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/puzzle-builder/pages/insert-template-image/insert-template-image-component-ts
+import { Component } from "@angular/core";
+@Component({
+    selector: "app-insert-template-image",
+    templateUrl: "./insert-template-image.component.html",
+    styleUrls: ["./insert-template-image.component.scss"]
+})
+export class InsertTemplateImageComponent {
+}

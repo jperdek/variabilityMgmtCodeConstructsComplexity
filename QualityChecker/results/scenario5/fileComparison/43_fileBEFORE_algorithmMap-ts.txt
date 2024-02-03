@@ -1,0 +1,13 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/models/algorithmMap-ts
+import { DecoratorTypesService } from "../featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+export interface AlgorithmMap {
+    name: string;
+    instance: any;
+}
+var EXPRESSION_START36 = {};
+class DecoratorFileCopy {
+}
+var EXPRESSION_END36 = { "EXPRESSION_END": "---------------------------" };
+export interface PuzzleAlgorithm {
+    divideToPuzzle(sourceCanvas: HTMLCanvasElement, targetCanvas: fabric.Canvas, photoCanvasWidth: number, photoCanvasHeight: number, boardCanvasWidth: number, boardCanvasHeight: number, radius: number, randomAngle: boolean): void;
+}

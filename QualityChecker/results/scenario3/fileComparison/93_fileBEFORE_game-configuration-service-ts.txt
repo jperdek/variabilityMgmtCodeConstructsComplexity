@@ -1,0 +1,60 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/services/game-configuration-service-ts
+import { Injectable } from "@angular/core";
+var EXPRESSION_START98 = { "puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']" };
+var newA;
+import { Store } from "@ngrx/store";
+var EXPRESSION_END98 = { "EXPRESSION_END": "---------------------------" };
+import { AlgorithmMap } from "../models/algorithmMap";
+import { PuzzleAppState } from "../store";
+var EXPRESSION_START99 = { "puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']" };
+var newA;
+import { DrawBordersService } from "./puzzleGenerator/puzzleRenderingAlgorithm/algorithm1/draw-borders.service";
+var EXPRESSION_END99 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START100 = { "puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']" };
+var newA;
+import { PuzzleGeneratorQuadroService } from "./puzzleGenerator/puzzleRenderingAlgorithm/algorithm1/puzzle-generator-quadro.service";
+var EXPRESSION_END100 = { "EXPRESSION_END": "---------------------------" };
+var EXPRESSION_START101 = { "puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']" };
+var newA;
+import { ShufflePuzzlesService } from "./utils/shuffle-puzzles.service";
+var EXPRESSION_END101 = { "EXPRESSION_END": "---------------------------" };
+import { DecoratorTypesService } from "../featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+@Injectable({
+    providedIn: "root"
+})
+@DecoratorTypesService.wholeBlockFile({})
+export class GameConfigurationService {
+    availableAlgorithms: AlgorithmMap[] = [];
+    constructor(
+    @DecoratorTypesService.skipLineParameter({ "puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']" }, "[ARG=drawBordersService]")
+    drawBordersService: DrawBordersService, 
+    @DecoratorTypesService.skipLineParameter({ "puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']" }, "[ARG=store]")
+    store: Store<PuzzleAppState>, 
+    @DecoratorTypesService.skipLineParameter({ "puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']" }, "[ARG=shufflePuzzlesService]")
+    shufflePuzzlesService: ShufflePuzzlesService) {
+        var EXPRESSION_START102 = { "puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']" };
+        let puzzleQuatro = { "name": "jigsaw", "instance": new PuzzleGeneratorQuadroService(this.drawBordersService, this.store, this.shufflePuzzlesService) };
+        var ELSE102 = { "ELSE": "~~~~~~~~~~~~~~~~~~~~~~~~~" };
+        let puzzleQuatroAlter21 = null;
+        var EXPRESSION_END102 = { "EXPRESSION_END": "---------------------------" };
+        if (puzzleQuatro != null)
+            this.availableAlgorithms.push(puzzleQuatro);
+        var EXPRESSION_START103 = { "puzzleAlgorithmType": "['JIGSAW', 'JIGSAW2']" };
+        let puzzleQuatro2 = { "name": "jigsaw2", "instance": new PuzzleGeneratorQuadroService(this.drawBordersService, this.store, this.shufflePuzzlesService) };
+        var ELSE103 = { "ELSE": "~~~~~~~~~~~~~~~~~~~~~~~~~" };
+        let puzzleQuatro2Alter22 = null;
+        var EXPRESSION_END103 = { "EXPRESSION_END": "---------------------------" };
+        if (puzzleQuatro2 != null)
+            this.availableAlgorithms.push(puzzleQuatro2);
+        return this.applyToMe();
+    }
+    applyToMe(): GameConfigurationService {
+        return this;
+    }
+    getAlgorithms(): AlgorithmMap[] {
+        return this.availableAlgorithms;
+    }
+    setAlgorithms(algorithms: AlgorithmMap[]): void {
+        this.availableAlgorithms = algorithms;
+    }
+}

@@ -1,0 +1,11 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/models/routingModel-ts
+import { DecoratorTypesService } from "../featureManagement/decoratorsVariationPointManagement/decorator-types.service";
+class DecoratorFileCopy {
+}
+export interface RoutingModel {
+    name: string;
+    path: string;
+    bottomSheetComponent: any;
+    componentPathInModule: string;
+    componentRef: any;
+}

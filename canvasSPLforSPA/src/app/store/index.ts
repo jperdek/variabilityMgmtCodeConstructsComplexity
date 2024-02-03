@@ -1,0 +1,15 @@
+import { ActionReducerMap } from '@ngrx/store';
+import * as puzzleState from './puzzles/puzzles.reducer';
+import { DecoratorTypesService } from '../featureManagement/decoratorsVariationPointManagement/decorator-types.service';
+
+export interface PuzzleAppState {
+    [puzzleState.puzzlesFeatureKey]: puzzleState.PuzzleToSelectState;
+}
+
+export const reducers: ActionReducerMap<PuzzleAppState> = {
+    [puzzleState.puzzlesFeatureKey]: puzzleState.reducer,
+};
+
+@DecoratorTypesService.wholeBlockFile({})
+class DecoratorFileCopy {}
+export const puzzleListForSelect = (state: PuzzleAppState): puzzleState.PuzzleToSelectState => state[puzzleState.puzzlesFeatureKey];

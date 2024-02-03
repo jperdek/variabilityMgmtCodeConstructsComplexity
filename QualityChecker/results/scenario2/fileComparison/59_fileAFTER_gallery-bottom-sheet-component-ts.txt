@@ -1,0 +1,15 @@
+// FROM: E:/aspects/canvasSPLforSPA/canvasSPLforSPA/src/app/puzzle-builder/pages/bottom-sheets/gallery-bottom-sheet/gallery-bottom-sheet-component-ts
+import { Component } from "@angular/core";
+import { MatBottomSheetRef } from "@angular/material/bottom-sheet";
+@Component({
+    selector: "app-gallery-bottom-sheet",
+    templateUrl: "./gallery-bottom-sheet.component.html",
+    styleUrls: ["./gallery-bottom-sheet.component.scss"]
+})
+export class GalleryBottomSheetComponent {
+    constructor(bottomSheetRef: MatBottomSheetRef<GalleryBottomSheetComponent>) { }
+    public openLink(event: MouseEvent): void {
+        this.bottomSheetRef.dismiss();
+        event.preventDefault();
+    }
+}

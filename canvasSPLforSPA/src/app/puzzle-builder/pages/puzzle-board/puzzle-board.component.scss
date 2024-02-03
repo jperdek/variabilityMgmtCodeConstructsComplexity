@@ -1,0 +1,60 @@
+@import "../../../styles/layout-settings.scss";
+
+#supportCanvas {
+  display: none;
+}
+
+.puzzle-board-wrapper {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+
+  @media (min-width: 960px) {
+    width: calc(100vw - #{$large-left-panel-size}) !important;
+    height: calc(100vh - #{$menu-height}) !important;
+  }
+
+  @media (min-width: 600px) and (max-width: 960px) {
+    width: calc(100vw - #{$medium-left-panel-size}) !important;
+    height: calc(100vh - #{$menu-height}) !important;
+  }
+
+  @media (max-width: 600px) {
+    width: 100vw !important;
+    height: calc(100vh - #{$menu-height} - #{$small-menu-height}) !important;
+  }
+
+  #puzzleBoard {
+    background-color: #ffdab9;
+    position: relative !important;
+  }
+}
+
+::ng-deep .mat-drawer-content {
+  height: auto;
+  overflow: hidden;
+}
+
+.hide-zoom-content {
+  display: none !important;
+}
+
+.zoom-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 0;
+  justify-items: right;
+  justify-content: right;
+
+  .spacer {
+    flex-grow: 1;
+  }
+
+  app-zoom-menu {
+    // position: relative;
+  }
+}
+
