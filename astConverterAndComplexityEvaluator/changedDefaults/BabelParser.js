@@ -40,8 +40,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @type {{plugins: string[]}}
  * @ignore
  */
+
 var s_DEFAULT_BABELPARSER_OPTIONS = {
-   plugins: ['asyncGenerators', 'bigInt', 'classProperties', 'classPrivateProperties', 'classPrivateMethods', ['decorators', {decoratorsBeforeExport: true}], 'doExpressions', 'dynamicImport', 'exportDefaultFrom', 'exportNamespaceFrom', 'functionBind', 'functionSent', 'importMeta', 'jsx', 'logicalAssignment', 'nullishCoalescingOperator', 'numericSeparator', 'objectRestSpread', 'optionalCatchBinding', 'optionalChaining', ['pipelineOperator', { proposal: 'minimal' }], 'throwExpressions', 'typescript']
+   plugins: ['jsx', 'typescript', 'decorators-legacy', 'classProperties']
 };
 
 /**
@@ -72,7 +73,6 @@ var BabelParser = function () {
 
          // Make a copy of the default options.
          var defaultOptions = JSON.parse((0, _stringify2.default)(s_DEFAULT_BABELPARSER_OPTIONS));
-
          if ((typeof override === 'undefined' ? 'undefined' : (0, _typeof3.default)(override)) === 'object') {
             // If decoratorsBeforeExport is defined as an override then set that value.
             if (typeof override.decoratorsBeforeExport === 'boolean') {
