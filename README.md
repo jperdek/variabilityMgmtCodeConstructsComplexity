@@ -18,7 +18,7 @@
 
 # USAGE AND VISUALIZATION
       
-[[/codeComplexityPosterEN.png|USAGE AND VISUALIZATION POSTER]]
+![USAGE AND VISUALIZATION POSTER](https://github.com/jperdek/variabilityMgmtCodeConstructsComplexity/blob/master/codeComplexityPosterEN.png)
 
 
 # LAUNCH STEPS  
