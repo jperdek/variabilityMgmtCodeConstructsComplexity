@@ -16,6 +16,11 @@
 	
 
 
+# USAGE AND VISUALIZATION
+      
+[[/codeComplexityPosterEN.png|USAGE AND VISUALIZATION POSTER]]
+
+
 # LAUNCH STEPS  
 
 * 1) Unpack the project ZIP to the chosen directory  
